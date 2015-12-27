@@ -4,6 +4,15 @@ import requests, xml.etree.ElementTree as etree
 import os
 import sys
 
+def clean(value):
+    return "\"" + value+"\""
+
+def to_node(value):
+    return value.replace(".","_").replace("@","at_").replace("/","_").replace("-","_").replace(":","_")
+
+def def_node(value):
+    return to_node(value) +"[label=\"" + value+"\"]"
+
 
 class StyleElement:
     def __init__(self,dirname,name,parent):
@@ -15,11 +24,11 @@ class StyleElement:
         return self.dirname+"/"+self.name
 
     def to_node(self):
-        return self.get_path().replace(".","_").replace("@","at_").replace("/","_").replace("-","_").replace(":","_")
+        return to_node(self.get_path())
 
 
     def def_node(self):
-        return to_node() +"[label=\"" + self.get_path()+"\"]"
+        return self.to_node() +"[label=\"" + self.get_path()+"\"]"
 
     def get_parent(self):
         if self.parent is None:
@@ -39,14 +48,6 @@ class Style:
         self.elements.append(StyleElement(self.dirname,name,parent))
 
 
-def clean(value):
-    return "\"" + value+"\""
-
-def to_node(value):
-    return value.replace(".","_").replace("@","at_").replace("/","_").replace("-","_").replace(":","_")
-
-def def_node(value):
-    return to_node(value) +"[label=\"" + value+"\"]"
 
 
 
@@ -66,6 +67,7 @@ for dirname in os.listdir("list"):
             style.add(rawStyle.get("name"),rawStyle.get("parent"))
 
 
+styles.sort()
 styles.reverse()
 for style in styles:
     print style.dirname
@@ -75,13 +77,17 @@ print " rankdir=LR;"
 for style in styles:
     # print " subgraph cluster_"+to_node(style.dirname) +" {"
     print " subgraph "+to_node(style.dirname) +" {"
+    if style.dirname.find("themes")>-1:
+        print "node [style=filled,color=\"#aaaaff\"];"
+
+    print "  "
     print "  label = "+clean(style.dirname)+";"
     print """
     style = "dashed";
             """
 
     for element in style.elements:
-        print "  "+def_node(style.dirname+"/"+element.name)+";"# + " -> " + clean(element.parent)
+        print "  "+element.def_node()+";"# + " -> " + clean(element.parent)
         for parentElement in style.elements:
             if element.get_parent() == parentElement.name:
                     print "  "+element.to_node() + " -> " + to_node(style.dirname+"/"+element.get_parent())+";"
