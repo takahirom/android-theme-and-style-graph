@@ -59,7 +59,9 @@ digraph {
   values_v21_themes_base_xml_Base_Theme_AppCompat_Light_Dialog -> values_v21_themes_base_xml_Base_V21_Theme_AppCompat_Light_Dialog;
   values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat[label="values-v21/themes_base.xml/Platform.ThemeOverlay.AppCompat"];
   values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark[label="values-v21/themes_base.xml/Platform.ThemeOverlay.AppCompat.Dark"];
+  values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat;
   values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light[label="values-v21/themes_base.xml/Platform.ThemeOverlay.AppCompat.Light"];
+  values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat;
  }
  subgraph values_v21_styles_base_text_xml {
   label = "values-v21/styles_base_text.xml";
@@ -117,11 +119,14 @@ digraph {
   values_v21_styles_base_xml_Base_Widget_AppCompat_Spinner[label="values-v21/styles_base.xml/Base.Widget.AppCompat.Spinner"];
   values_v21_styles_base_xml_Base_Widget_AppCompat_ListView[label="values-v21/styles_base.xml/Base.Widget.AppCompat.ListView"];
   values_v21_styles_base_xml_Base_Widget_AppCompat_ListView_Menu[label="values-v21/styles_base.xml/Base.Widget.AppCompat.ListView.Menu"];
+  values_v21_styles_base_xml_Base_Widget_AppCompat_ListView_Menu -> values_v21_styles_base_xml_Base_Widget_AppCompat_ListView;
   values_v21_styles_base_xml_Base_Widget_AppCompat_ListPopupWindow[label="values-v21/styles_base.xml/Base.Widget.AppCompat.ListPopupWindow"];
   values_v21_styles_base_xml_Base_Widget_AppCompat_PopupMenu[label="values-v21/styles_base.xml/Base.Widget.AppCompat.PopupMenu"];
   values_v21_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu[label="values-v21/styles_base.xml/Base.Widget.AppCompat.Light.PopupMenu"];
   values_v21_styles_base_xml_Base_Widget_AppCompat_PopupMenu_Overflow[label="values-v21/styles_base.xml/Base.Widget.AppCompat.PopupMenu.Overflow"];
+  values_v21_styles_base_xml_Base_Widget_AppCompat_PopupMenu_Overflow -> values_v21_styles_base_xml_Base_Widget_AppCompat_PopupMenu;
   values_v21_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu_Overflow[label="values-v21/styles_base.xml/Base.Widget.AppCompat.Light.PopupMenu.Overflow"];
+  values_v21_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu_Overflow -> values_v21_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu;
   values_v21_styles_base_xml_Base_TextAppearance_AppCompat_Widget_PopupMenu_Large[label="values-v21/styles_base.xml/Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"];
   values_v21_styles_base_xml_Base_TextAppearance_AppCompat_Widget_PopupMenu_Small[label="values-v21/styles_base.xml/Base.TextAppearance.AppCompat.Widget.PopupMenu.Small"];
   values_v21_styles_base_xml_Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large[label="values-v21/styles_base.xml/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"];
@@ -192,8 +197,11 @@ digraph {
   values_v14_styles_xml_TextAppearance_StatusBar_EventContent[label="values-v14/styles.xml/TextAppearance.StatusBar.EventContent"];
   values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Title[label="values-v14/styles.xml/TextAppearance.StatusBar.EventContent.Title"];
   values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Line2[label="values-v14/styles.xml/TextAppearance.StatusBar.EventContent.Line2"];
+  values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Line2 -> values_v14_styles_xml_TextAppearance_StatusBar_EventContent;
   values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Info[label="values-v14/styles.xml/TextAppearance.StatusBar.EventContent.Info"];
+  values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Info -> values_v14_styles_xml_TextAppearance_StatusBar_EventContent;
   values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Time[label="values-v14/styles.xml/TextAppearance.StatusBar.EventContent.Time"];
+  values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Time -> values_v14_styles_xml_TextAppearance_StatusBar_EventContent;
  }
  subgraph values_v12_styles_base_xml {
   label = "values-v12/styles_base.xml";
@@ -302,24 +310,34 @@ digraph {
   values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog[label="values/themes_base.xml/Base.Theme.AppCompat.Light.Dialog"];
   values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog -> values_themes_base_xml_Base_V7_Theme_AppCompat_Light_Dialog;
   values_themes_base_xml_Base_Theme_AppCompat_Dialog_Alert[label="values/themes_base.xml/Base.Theme.AppCompat.Dialog.Alert"];
+  values_themes_base_xml_Base_Theme_AppCompat_Dialog_Alert -> values_themes_base_xml_Base_Theme_AppCompat_Dialog;
   values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_Alert[label="values/themes_base.xml/Base.Theme.AppCompat.Light.Dialog.Alert"];
+  values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_Alert -> values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
   values_themes_base_xml_Base_Theme_AppCompat_Dialog_MinWidth[label="values/themes_base.xml/Base.Theme.AppCompat.Dialog.MinWidth"];
+  values_themes_base_xml_Base_Theme_AppCompat_Dialog_MinWidth -> values_themes_base_xml_Base_Theme_AppCompat_Dialog;
   values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_MinWidth[label="values/themes_base.xml/Base.Theme.AppCompat.Light.Dialog.MinWidth"];
+  values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_MinWidth -> values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
   values_themes_base_xml_Base_Theme_AppCompat_Dialog_FixedSize[label="values/themes_base.xml/Base.Theme.AppCompat.Dialog.FixedSize"];
+  values_themes_base_xml_Base_Theme_AppCompat_Dialog_FixedSize -> values_themes_base_xml_Base_Theme_AppCompat_Dialog;
   values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_FixedSize[label="values/themes_base.xml/Base.Theme.AppCompat.Light.Dialog.FixedSize"];
+  values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_FixedSize -> values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
   values_themes_base_xml_Base_Theme_AppCompat_DialogWhenLarge[label="values/themes_base.xml/Base.Theme.AppCompat.DialogWhenLarge"];
   values_themes_base_xml_Base_Theme_AppCompat_Light_DialogWhenLarge[label="values/themes_base.xml/Base.Theme.AppCompat.Light.DialogWhenLarge"];
   values_themes_base_xml_Platform_ThemeOverlay_AppCompat[label="values/themes_base.xml/Platform.ThemeOverlay.AppCompat"];
   values_themes_base_xml_Base_ThemeOverlay_AppCompat[label="values/themes_base.xml/Base.ThemeOverlay.AppCompat"];
   values_themes_base_xml_Base_ThemeOverlay_AppCompat -> values_themes_base_xml_Platform_ThemeOverlay_AppCompat;
   values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark[label="values/themes_base.xml/Platform.ThemeOverlay.AppCompat.Dark"];
+  values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark -> values_themes_base_xml_Platform_ThemeOverlay_AppCompat;
   values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light[label="values/themes_base.xml/Platform.ThemeOverlay.AppCompat.Light"];
+  values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light -> values_themes_base_xml_Platform_ThemeOverlay_AppCompat;
   values_themes_base_xml_Base_ThemeOverlay_AppCompat_Light[label="values/themes_base.xml/Base.ThemeOverlay.AppCompat.Light"];
   values_themes_base_xml_Base_ThemeOverlay_AppCompat_Light -> values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light;
   values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark[label="values/themes_base.xml/Base.ThemeOverlay.AppCompat.Dark"];
   values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark -> values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark;
   values_themes_base_xml_Base_ThemeOverlay_AppCompat_ActionBar[label="values/themes_base.xml/Base.ThemeOverlay.AppCompat.ActionBar"];
+  values_themes_base_xml_Base_ThemeOverlay_AppCompat_ActionBar -> values_themes_base_xml_Base_ThemeOverlay_AppCompat;
   values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark_ActionBar[label="values/themes_base.xml/Base.ThemeOverlay.AppCompat.Dark.ActionBar"];
+  values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark_ActionBar -> values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark;
  }
  subgraph values_themes_xml {
   label = "values/themes.xml";
@@ -330,7 +348,9 @@ digraph {
   values_themes_xml_Theme_AppCompat_Light[label="values/themes.xml/Theme.AppCompat.Light"];
   values_themes_xml_Theme_AppCompat_Light_DarkActionBar[label="values/themes.xml/Theme.AppCompat.Light.DarkActionBar"];
   values_themes_xml_Theme_AppCompat_NoActionBar[label="values/themes.xml/Theme.AppCompat.NoActionBar"];
+  values_themes_xml_Theme_AppCompat_NoActionBar -> values_themes_xml_Theme_AppCompat;
   values_themes_xml_Theme_AppCompat_Light_NoActionBar[label="values/themes.xml/Theme.AppCompat.Light.NoActionBar"];
+  values_themes_xml_Theme_AppCompat_Light_NoActionBar -> values_themes_xml_Theme_AppCompat_Light;
   values_themes_xml_Theme_AppCompat_DialogWhenLarge[label="values/themes.xml/Theme.AppCompat.DialogWhenLarge"];
   values_themes_xml_Theme_AppCompat_Light_DialogWhenLarge[label="values/themes.xml/Theme.AppCompat.Light.DialogWhenLarge"];
   values_themes_xml_Theme_AppCompat_Dialog[label="values/themes.xml/Theme.AppCompat.Dialog"];
@@ -373,28 +393,49 @@ digraph {
             
   values_styles_base_text_xml_Base_TextAppearance_AppCompat[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat"];
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display4"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display3"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display2"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display1"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Headline"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Title"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Title.Inverse"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Subhead"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Subhead.Inverse"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Body2"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Body1"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Caption"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Menu"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Button"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Widget.Button"];
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Widget.Button.Inverse"];
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Inverse"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Large"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Large.Inverse"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Medium"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Medium.Inverse"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Small"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
   values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Small.Inverse"];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small;
  }
  subgraph values_styles_base_xml {
   label = "values/styles_base.xml";
@@ -405,9 +446,12 @@ digraph {
   values_styles_base_xml_Base_Widget_AppCompat_Light_ActionBar[label="values/styles_base.xml/Base.Widget.AppCompat.Light.ActionBar"];
   values_styles_base_xml_Base_Widget_AppCompat_Light_ActionBar -> values_styles_base_xml_Base_Widget_AppCompat_ActionBar;
   values_styles_base_xml_Base_Widget_AppCompat_ActionBar_Solid[label="values/styles_base.xml/Base.Widget.AppCompat.ActionBar.Solid"];
+  values_styles_base_xml_Base_Widget_AppCompat_ActionBar_Solid -> values_styles_base_xml_Base_Widget_AppCompat_ActionBar;
   values_styles_base_xml_Base_Widget_AppCompat_Light_ActionBar_Solid[label="values/styles_base.xml/Base.Widget.AppCompat.Light.ActionBar.Solid"];
+  values_styles_base_xml_Base_Widget_AppCompat_Light_ActionBar_Solid -> values_styles_base_xml_Base_Widget_AppCompat_Light_ActionBar;
   values_styles_base_xml_Base_Widget_AppCompat_ActionButton[label="values/styles_base.xml/Base.Widget.AppCompat.ActionButton"];
   values_styles_base_xml_Base_Widget_AppCompat_ActionButton_CloseMode[label="values/styles_base.xml/Base.Widget.AppCompat.ActionButton.CloseMode"];
+  values_styles_base_xml_Base_Widget_AppCompat_ActionButton_CloseMode -> values_styles_base_xml_Base_Widget_AppCompat_ActionButton;
   values_styles_base_xml_Base_Widget_AppCompat_ActionButton_Overflow[label="values/styles_base.xml/Base.Widget.AppCompat.ActionButton.Overflow"];
   values_styles_base_xml_Base_Widget_AppCompat_ActionBar_TabBar[label="values/styles_base.xml/Base.Widget.AppCompat.ActionBar.TabBar"];
   values_styles_base_xml_Base_Widget_AppCompat_Light_ActionBar_TabBar[label="values/styles_base.xml/Base.Widget.AppCompat.Light.ActionBar.TabBar"];
@@ -434,15 +478,19 @@ digraph {
   values_styles_base_xml_Base_Widget_AppCompat_Spinner[label="values/styles_base.xml/Base.Widget.AppCompat.Spinner"];
   values_styles_base_xml_Base_Widget_AppCompat_Spinner -> values_styles_base_xml_Platform_Widget_AppCompat_Spinner;
   values_styles_base_xml_Base_Widget_AppCompat_Spinner_Underlined[label="values/styles_base.xml/Base.Widget.AppCompat.Spinner.Underlined"];
+  values_styles_base_xml_Base_Widget_AppCompat_Spinner_Underlined -> values_styles_base_xml_Base_Widget_AppCompat_Spinner;
   values_styles_base_xml_Base_Widget_AppCompat_DropDownItem_Spinner[label="values/styles_base.xml/Base.Widget.AppCompat.DropDownItem.Spinner"];
   values_styles_base_xml_Base_Widget_AppCompat_ListView[label="values/styles_base.xml/Base.Widget.AppCompat.ListView"];
   values_styles_base_xml_Base_Widget_AppCompat_ListView_DropDown[label="values/styles_base.xml/Base.Widget.AppCompat.ListView.DropDown"];
+  values_styles_base_xml_Base_Widget_AppCompat_ListView_DropDown -> values_styles_base_xml_Base_Widget_AppCompat_ListView;
   values_styles_base_xml_Base_TextAppearance_AppCompat_Widget_DropDownItem[label="values/styles_base.xml/Base.TextAppearance.AppCompat.Widget.DropDownItem"];
   values_styles_base_xml_Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item[label="values/styles_base.xml/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"];
   values_styles_base_xml_Base_Widget_AppCompat_ListView_Menu[label="values/styles_base.xml/Base.Widget.AppCompat.ListView.Menu"];
   values_styles_base_xml_Base_Widget_AppCompat_ListPopupWindow[label="values/styles_base.xml/Base.Widget.AppCompat.ListPopupWindow"];
   values_styles_base_xml_Base_Widget_AppCompat_PopupMenu_Overflow[label="values/styles_base.xml/Base.Widget.AppCompat.PopupMenu.Overflow"];
+  values_styles_base_xml_Base_Widget_AppCompat_PopupMenu_Overflow -> values_styles_base_xml_Base_Widget_AppCompat_PopupMenu;
   values_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu_Overflow[label="values/styles_base.xml/Base.Widget.AppCompat.Light.PopupMenu.Overflow"];
+  values_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu_Overflow -> values_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu;
   values_styles_base_xml_Base_Widget_AppCompat_PopupMenu[label="values/styles_base.xml/Base.Widget.AppCompat.PopupMenu"];
   values_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu[label="values/styles_base.xml/Base.Widget.AppCompat.Light.PopupMenu"];
   values_styles_base_xml_Base_TextAppearance_AppCompat_Widget_PopupMenu_Large[label="values/styles_base.xml/Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"];
@@ -451,7 +499,9 @@ digraph {
   values_styles_base_xml_Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small[label="values/styles_base.xml/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"];
   values_styles_base_xml_Base_TextAppearance_AppCompat_SearchResult[label="values/styles_base.xml/Base.TextAppearance.AppCompat.SearchResult"];
   values_styles_base_xml_Base_TextAppearance_AppCompat_SearchResult_Title[label="values/styles_base.xml/Base.TextAppearance.AppCompat.SearchResult.Title"];
+  values_styles_base_xml_Base_TextAppearance_AppCompat_SearchResult_Title -> values_styles_base_xml_Base_TextAppearance_AppCompat_SearchResult;
   values_styles_base_xml_Base_TextAppearance_AppCompat_SearchResult_Subtitle[label="values/styles_base.xml/Base.TextAppearance.AppCompat.SearchResult.Subtitle"];
+  values_styles_base_xml_Base_TextAppearance_AppCompat_SearchResult_Subtitle -> values_styles_base_xml_Base_TextAppearance_AppCompat_SearchResult;
   values_styles_base_xml_Base_Widget_AppCompat_AutoCompleteTextView[label="values/styles_base.xml/Base.Widget.AppCompat.AutoCompleteTextView"];
   values_styles_base_xml_Base_Widget_AppCompat_AutoCompleteTextView -> values_styles_base_xml_Base_V7_Widget_AppCompat_AutoCompleteTextView;
   values_styles_base_xml_Base_V7_Widget_AppCompat_AutoCompleteTextView[label="values/styles_base.xml/Base.V7.Widget.AppCompat.AutoCompleteTextView"];
@@ -463,6 +513,7 @@ digraph {
   values_styles_base_xml_Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle[label="values/styles_base.xml/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle"];
   values_styles_base_xml_Base_Widget_AppCompat_SearchView[label="values/styles_base.xml/Base.Widget.AppCompat.SearchView"];
   values_styles_base_xml_Base_Widget_AppCompat_SearchView_ActionBar[label="values/styles_base.xml/Base.Widget.AppCompat.SearchView.ActionBar"];
+  values_styles_base_xml_Base_Widget_AppCompat_SearchView_ActionBar -> values_styles_base_xml_Base_Widget_AppCompat_SearchView;
   values_styles_base_xml_Base_Widget_AppCompat_EditText[label="values/styles_base.xml/Base.Widget.AppCompat.EditText"];
   values_styles_base_xml_Base_Widget_AppCompat_EditText -> values_styles_base_xml_Base_V7_Widget_AppCompat_EditText;
   values_styles_base_xml_Base_V7_Widget_AppCompat_EditText[label="values/styles_base.xml/Base.V7.Widget.AppCompat.EditText"];
@@ -477,9 +528,13 @@ digraph {
   values_styles_base_xml_Base_Widget_AppCompat_SeekBar[label="values/styles_base.xml/Base.Widget.AppCompat.SeekBar"];
   values_styles_base_xml_Base_Widget_AppCompat_Button[label="values/styles_base.xml/Base.Widget.AppCompat.Button"];
   values_styles_base_xml_Base_Widget_AppCompat_Button_Small[label="values/styles_base.xml/Base.Widget.AppCompat.Button.Small"];
+  values_styles_base_xml_Base_Widget_AppCompat_Button_Small -> values_styles_base_xml_Base_Widget_AppCompat_Button;
   values_styles_base_xml_Base_Widget_AppCompat_Button_Colored[label="values/styles_base.xml/Base.Widget.AppCompat.Button.Colored"];
+  values_styles_base_xml_Base_Widget_AppCompat_Button_Colored -> values_styles_base_xml_Base_Widget_AppCompat_Button;
   values_styles_base_xml_Base_Widget_AppCompat_Button_Borderless[label="values/styles_base.xml/Base.Widget.AppCompat.Button.Borderless"];
+  values_styles_base_xml_Base_Widget_AppCompat_Button_Borderless -> values_styles_base_xml_Base_Widget_AppCompat_Button;
   values_styles_base_xml_Base_Widget_AppCompat_Button_Borderless_Colored[label="values/styles_base.xml/Base.Widget.AppCompat.Button.Borderless.Colored"];
+  values_styles_base_xml_Base_Widget_AppCompat_Button_Borderless_Colored -> values_styles_base_xml_Base_Widget_AppCompat_Button_Borderless;
   values_styles_base_xml_Base_Widget_AppCompat_Button_ButtonBar_AlertDialog[label="values/styles_base.xml/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"];
   values_styles_base_xml_Base_Widget_AppCompat_ImageButton[label="values/styles_base.xml/Base.Widget.AppCompat.ImageButton"];
   values_styles_base_xml_Base_Widget_AppCompat_TextView_SpinnerItem[label="values/styles_base.xml/Base.Widget.AppCompat.TextView.SpinnerItem"];
@@ -489,6 +544,7 @@ digraph {
   values_styles_base_xml_Base_Animation_AppCompat_Dialog[label="values/styles_base.xml/Base.Animation.AppCompat.Dialog"];
   values_styles_base_xml_Base_Widget_AppCompat_ButtonBar[label="values/styles_base.xml/Base.Widget.AppCompat.ButtonBar"];
   values_styles_base_xml_Base_Widget_AppCompat_ButtonBar_AlertDialog[label="values/styles_base.xml/Base.Widget.AppCompat.ButtonBar.AlertDialog"];
+  values_styles_base_xml_Base_Widget_AppCompat_ButtonBar_AlertDialog -> values_styles_base_xml_Base_Widget_AppCompat_ButtonBar;
   values_styles_base_xml_Base_Animation_AppCompat_DropDownUp[label="values/styles_base.xml/Base.Animation.AppCompat.DropDownUp"];
   values_styles_base_xml_Base_AlertDialog_AppCompat[label="values/styles_base.xml/Base.AlertDialog.AppCompat"];
   values_styles_base_xml_Base_AlertDialog_AppCompat_Light[label="values/styles_base.xml/Base.AlertDialog.AppCompat.Light"];
@@ -528,7 +584,9 @@ digraph {
   values_styles_xml_Widget_AppCompat_Spinner[label="values/styles.xml/Widget.AppCompat.Spinner"];
   values_styles_xml_Widget_AppCompat_Spinner_Underlined[label="values/styles.xml/Widget.AppCompat.Spinner.Underlined"];
   values_styles_xml_Widget_AppCompat_Spinner_DropDown[label="values/styles.xml/Widget.AppCompat.Spinner.DropDown"];
+  values_styles_xml_Widget_AppCompat_Spinner_DropDown -> values_styles_xml_Widget_AppCompat_Spinner;
   values_styles_xml_Widget_AppCompat_Spinner_DropDown_ActionBar[label="values/styles.xml/Widget.AppCompat.Spinner.DropDown.ActionBar"];
+  values_styles_xml_Widget_AppCompat_Spinner_DropDown_ActionBar -> values_styles_xml_Widget_AppCompat_Spinner_DropDown;
   values_styles_xml_Widget_AppCompat_DropDownItem_Spinner[label="values/styles.xml/Widget.AppCompat.DropDownItem.Spinner"];
   values_styles_xml_Widget_AppCompat_ListView[label="values/styles.xml/Widget.AppCompat.ListView"];
   values_styles_xml_Widget_AppCompat_ListView_DropDown[label="values/styles.xml/Widget.AppCompat.ListView.DropDown"];
@@ -601,8 +659,11 @@ digraph {
   values_styles_xml_TextAppearance_AppCompat_Widget_Switch[label="values/styles.xml/TextAppearance.AppCompat.Widget.Switch"];
   values_styles_xml_TextAppearance_AppCompat_Widget_TextView_SpinnerItem[label="values/styles.xml/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"];
   values_styles_xml_Widget_AppCompat_Light_ActionBar_Solid_Inverse[label="values/styles.xml/Widget.AppCompat.Light.ActionBar.Solid.Inverse"];
+  values_styles_xml_Widget_AppCompat_Light_ActionBar_Solid_Inverse -> values_styles_xml_Widget_AppCompat_Light_ActionBar_Solid;
   values_styles_xml_Widget_AppCompat_Light_ActionBar_TabBar_Inverse[label="values/styles.xml/Widget.AppCompat.Light.ActionBar.TabBar.Inverse"];
+  values_styles_xml_Widget_AppCompat_Light_ActionBar_TabBar_Inverse -> values_styles_xml_Widget_AppCompat_Light_ActionBar_TabBar;
   values_styles_xml_Widget_AppCompat_Light_ActionBar_TabView_Inverse[label="values/styles.xml/Widget.AppCompat.Light.ActionBar.TabView.Inverse"];
+  values_styles_xml_Widget_AppCompat_Light_ActionBar_TabView_Inverse -> values_styles_xml_Widget_AppCompat_Light_ActionBar_TabView;
   values_styles_xml_TextAppearance_AppCompat_Light_SearchResult_Title[label="values/styles.xml/TextAppearance.AppCompat.Light.SearchResult.Title"];
   values_styles_xml_TextAppearance_AppCompat_Light_SearchResult_Title -> values_styles_xml_TextAppearance_AppCompat_SearchResult_Title;
   values_styles_xml_TextAppearance_AppCompat_Light_SearchResult_Subtitle[label="values/styles.xml/TextAppearance.AppCompat.Light.SearchResult.Subtitle"];
@@ -655,6 +716,8 @@ digraph {
  values_v21_themes_base_xml_Base_V21_Theme_AppCompat_Light -> values_themes_base_xml_Base_V7_Theme_AppCompat_Light;
  values_v21_themes_base_xml_Base_V21_Theme_AppCompat_Dialog -> values_v11_themes_base_xml_Base_V11_Theme_AppCompat_Dialog;
  values_v21_themes_base_xml_Base_V21_Theme_AppCompat_Light_Dialog -> values_v11_themes_base_xml_Base_V11_Theme_AppCompat_Light_Dialog;
+ values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark -> values_themes_base_xml_Platform_ThemeOverlay_AppCompat;
+ values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light -> values_themes_base_xml_Platform_ThemeOverlay_AppCompat;
  android_TextAppearance_Material[label="android:TextAppearance.Material"]
  values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat -> android_TextAppearance_Material;
  android_TextAppearance_Material_Display4[label="android:TextAppearance.Material.Display4"]
@@ -743,12 +806,15 @@ digraph {
  values_v21_styles_base_xml_Base_Widget_AppCompat_Spinner -> android_Widget_Material_Spinner;
  android_Widget_Material_ListView[label="android:Widget.Material.ListView"]
  values_v21_styles_base_xml_Base_Widget_AppCompat_ListView -> android_Widget_Material_ListView;
+ values_v21_styles_base_xml_Base_Widget_AppCompat_ListView_Menu -> values_styles_base_xml_Base_Widget_AppCompat_ListView;
  android_Widget_Material_ListPopupWindow[label="android:Widget.Material.ListPopupWindow"]
  values_v21_styles_base_xml_Base_Widget_AppCompat_ListPopupWindow -> android_Widget_Material_ListPopupWindow;
  android_Widget_Material_PopupMenu[label="android:Widget.Material.PopupMenu"]
  values_v21_styles_base_xml_Base_Widget_AppCompat_PopupMenu -> android_Widget_Material_PopupMenu;
  android_Widget_Material_Light_PopupMenu[label="android:Widget.Material.Light.PopupMenu"]
  values_v21_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu -> android_Widget_Material_Light_PopupMenu;
+ values_v21_styles_base_xml_Base_Widget_AppCompat_PopupMenu_Overflow -> values_styles_base_xml_Base_Widget_AppCompat_PopupMenu;
+ values_v21_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu_Overflow -> values_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu;
  android_TextAppearance_Material_Widget_PopupMenu_Large[label="android:TextAppearance.Material.Widget.PopupMenu.Large"]
  values_v21_styles_base_xml_Base_TextAppearance_AppCompat_Widget_PopupMenu_Large -> android_TextAppearance_Material_Widget_PopupMenu_Large;
  android_TextAppearance_Material_Widget_PopupMenu_Small[label="android:TextAppearance.Material.Widget.PopupMenu.Small"]
@@ -822,10 +888,15 @@ digraph {
  values_v17_styles_rtl_xml_RtlOverlay_DialogWindowTitle_AppCompat -> values_styles_base_xml_Base_DialogWindowTitle_AppCompat;
  values_v14_themes_base_xml_Platform_V14_AppCompat -> values_v11_themes_base_xml_Platform_V11_AppCompat;
  values_v14_themes_base_xml_Platform_V14_AppCompat_Light -> values_v11_themes_base_xml_Platform_V11_AppCompat_Light;
+ values_v14_styles_base_text_xml_Base_TextAppearance_AppCompat_Button -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_v14_styles_base_text_xml_Base_TextAppearance_AppCompat_Button -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
  at_android_style_TextAppearance_StatusBar_EventContent[label="@android:style/TextAppearance.StatusBar.EventContent"]
  values_v14_styles_xml_TextAppearance_StatusBar_EventContent -> at_android_style_TextAppearance_StatusBar_EventContent;
  at_android_style_TextAppearance_StatusBar_EventContent_Title[label="@android:style/TextAppearance.StatusBar.EventContent.Title"]
  values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Title -> at_android_style_TextAppearance_StatusBar_EventContent_Title;
+ values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Line2 -> values_styles_xml_TextAppearance_StatusBar_EventContent;
+ values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Info -> values_styles_xml_TextAppearance_StatusBar_EventContent;
+ values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Time -> values_styles_xml_TextAppearance_StatusBar_EventContent;
  values_v12_styles_base_xml_Base_V12_Widget_AppCompat_EditText -> values_styles_base_xml_Base_V7_Widget_AppCompat_EditText;
  values_v12_styles_base_xml_Base_V12_Widget_AppCompat_AutoCompleteTextView -> values_styles_base_xml_Base_V7_Widget_AppCompat_AutoCompleteTextView;
  android_Theme_Holo[label="android:Theme.Holo"]
@@ -834,6 +905,18 @@ digraph {
  values_v11_themes_base_xml_Platform_V11_AppCompat_Light -> android_Theme_Holo_Light;
  values_v11_themes_base_xml_Base_V11_Theme_AppCompat_Dialog -> values_themes_base_xml_Base_V7_Theme_AppCompat_Dialog;
  values_v11_themes_base_xml_Base_V11_Theme_AppCompat_Light_Dialog -> values_themes_base_xml_Base_V7_Theme_AppCompat_Light_Dialog;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Title;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Large;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Small;
+ values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small;
  android_Widget_Holo_Spinner[label="android:Widget.Holo.Spinner"]
  values_v11_styles_base_xml_Platform_Widget_AppCompat_Spinner -> android_Widget_Holo_Spinner;
  android_Widget_Holo_ProgressBar_Horizontal[label="android:Widget.Holo.ProgressBar.Horizontal"]
@@ -866,9 +949,23 @@ digraph {
  values_themes_base_xml_Base_V7_Theme_AppCompat_Light_Dialog -> values_v23_themes_base_xml_Base_Theme_AppCompat_Light;
  values_themes_base_xml_Base_V7_Theme_AppCompat_Light_Dialog -> values_v22_themes_base_xml_Base_Theme_AppCompat_Light;
  values_themes_base_xml_Base_V7_Theme_AppCompat_Light_Dialog -> values_v21_themes_base_xml_Base_Theme_AppCompat_Light;
+ values_themes_base_xml_Base_Theme_AppCompat_Dialog_Alert -> values_v21_themes_base_xml_Base_Theme_AppCompat_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Dialog_Alert -> values_v11_themes_base_xml_Base_Theme_AppCompat_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_Alert -> values_v21_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_Alert -> values_v11_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Dialog_MinWidth -> values_v21_themes_base_xml_Base_Theme_AppCompat_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Dialog_MinWidth -> values_v11_themes_base_xml_Base_Theme_AppCompat_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_MinWidth -> values_v21_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_MinWidth -> values_v11_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Dialog_FixedSize -> values_v21_themes_base_xml_Base_Theme_AppCompat_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Dialog_FixedSize -> values_v11_themes_base_xml_Base_Theme_AppCompat_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_FixedSize -> values_v21_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
+ values_themes_base_xml_Base_Theme_AppCompat_Light_Dialog_FixedSize -> values_v11_themes_base_xml_Base_Theme_AppCompat_Light_Dialog;
  values_themes_base_xml_Base_Theme_AppCompat_DialogWhenLarge -> values_themes_xml_Theme_AppCompat;
  values_themes_base_xml_Base_Theme_AppCompat_Light_DialogWhenLarge -> values_themes_xml_Theme_AppCompat_Light;
  values_themes_base_xml_Base_ThemeOverlay_AppCompat -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat;
+ values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat;
+ values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat;
  values_themes_base_xml_Base_ThemeOverlay_AppCompat_Light -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light;
  values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark;
  values_themes_xml_Theme_AppCompat -> values_v23_themes_base_xml_Base_Theme_AppCompat;
@@ -929,10 +1026,32 @@ digraph {
  values_styles_rtl_xml_RtlOverlay_DialogWindowTitle_AppCompat -> values_styles_base_xml_Base_DialogWindowTitle_AppCompat;
  android_TextAppearance[label="android:TextAppearance"]
  values_styles_base_text_xml_Base_TextAppearance_AppCompat -> android_TextAppearance;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Title;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button -> values_styles_xml_TextAppearance_AppCompat_Button;
  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button_Inverse -> values_styles_xml_TextAppearance_AppCompat_Button;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Large;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Small;
  values_styles_base_xml_Base_Widget_AppCompat_ActionButton -> values_v17_styles_rtl_xml_RtlUnderlay_Widget_AppCompat_ActionButton;
  values_styles_base_xml_Base_Widget_AppCompat_ActionButton -> values_styles_rtl_xml_RtlUnderlay_Widget_AppCompat_ActionButton;
+ values_styles_base_xml_Base_Widget_AppCompat_ActionButton_CloseMode -> values_v21_styles_base_xml_Base_Widget_AppCompat_ActionButton;
  values_styles_base_xml_Base_Widget_AppCompat_ActionButton_Overflow -> values_v17_styles_rtl_xml_RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
  values_styles_base_xml_Base_Widget_AppCompat_ActionButton_Overflow -> values_styles_rtl_xml_RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
  values_styles_base_xml_Base_Widget_AppCompat_Light_ActionBar_TabView -> values_v21_styles_base_xml_Base_Widget_AppCompat_ActionBar_TabView;
@@ -952,14 +1071,18 @@ digraph {
  android_Widget_Spinner[label="android:Widget.Spinner"]
  values_styles_base_xml_Platform_Widget_AppCompat_Spinner -> android_Widget_Spinner;
  values_styles_base_xml_Base_Widget_AppCompat_Spinner -> values_v11_styles_base_xml_Platform_Widget_AppCompat_Spinner;
+ values_styles_base_xml_Base_Widget_AppCompat_Spinner_Underlined -> values_v21_styles_base_xml_Base_Widget_AppCompat_Spinner;
  android_Widget_ListView[label="android:Widget.ListView"]
  values_styles_base_xml_Base_Widget_AppCompat_ListView -> android_Widget_ListView;
+ values_styles_base_xml_Base_Widget_AppCompat_ListView_DropDown -> values_v21_styles_base_xml_Base_Widget_AppCompat_ListView;
  android_TextAppearance_Small[label="android:TextAppearance.Small"]
  values_styles_base_xml_Base_TextAppearance_AppCompat_Widget_DropDownItem -> android_TextAppearance_Small;
  android_TextAppearance_Medium[label="android:TextAppearance.Medium"]
  values_styles_base_xml_Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item -> android_TextAppearance_Medium;
  android_Widget_ListView_Menu[label="android:Widget.ListView.Menu"]
  values_styles_base_xml_Base_Widget_AppCompat_ListView_Menu -> android_Widget_ListView_Menu;
+ values_styles_base_xml_Base_Widget_AppCompat_PopupMenu_Overflow -> values_v21_styles_base_xml_Base_Widget_AppCompat_PopupMenu;
+ values_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu_Overflow -> values_v21_styles_base_xml_Base_Widget_AppCompat_Light_PopupMenu;
  at_style_Widget_AppCompat_ListPopupWindow[label="@style/Widget.AppCompat.ListPopupWindow"]
  values_styles_base_xml_Base_Widget_AppCompat_PopupMenu -> at_style_Widget_AppCompat_ListPopupWindow;
  at_style_Widget_AppCompat_ListPopupWindow[label="@style/Widget.AppCompat.ListPopupWindow"]
@@ -995,6 +1118,10 @@ digraph {
  values_styles_base_xml_Base_Widget_AppCompat_SeekBar -> android_Widget;
  android_Widget[label="android:Widget"]
  values_styles_base_xml_Base_Widget_AppCompat_Button -> android_Widget;
+ values_styles_base_xml_Base_Widget_AppCompat_Button_Small -> values_v21_styles_base_xml_Base_Widget_AppCompat_Button;
+ values_styles_base_xml_Base_Widget_AppCompat_Button_Colored -> values_v21_styles_base_xml_Base_Widget_AppCompat_Button;
+ values_styles_base_xml_Base_Widget_AppCompat_Button_Borderless -> values_v21_styles_base_xml_Base_Widget_AppCompat_Button;
+ values_styles_base_xml_Base_Widget_AppCompat_Button_Borderless_Colored -> values_v21_styles_base_xml_Base_Widget_AppCompat_Button_Borderless;
  values_styles_base_xml_Base_Widget_AppCompat_Button_ButtonBar_AlertDialog -> values_styles_xml_Widget_AppCompat_Button_Borderless_Colored;
  android_Widget_ImageButton[label="android:Widget.ImageButton"]
  values_styles_base_xml_Base_Widget_AppCompat_ImageButton -> android_Widget_ImageButton;
@@ -1009,6 +1136,7 @@ digraph {
  values_styles_base_xml_Base_Animation_AppCompat_Dialog -> android_Animation;
  android_Widget[label="android:Widget"]
  values_styles_base_xml_Base_Widget_AppCompat_ButtonBar -> android_Widget;
+ values_styles_base_xml_Base_Widget_AppCompat_ButtonBar_AlertDialog -> values_v21_styles_base_xml_Base_Widget_AppCompat_ButtonBar;
  android_Animation[label="android:Animation"]
  values_styles_base_xml_Base_Animation_AppCompat_DropDownUp -> android_Animation;
  android_Widget[label="android:Widget"]

@@ -6,9 +6,28 @@ import sys
 
 
 class StyleElement:
-    def __init__(self,name,parent):
+    def __init__(self,dirname,name,parent):
+        self.dirname = dirname
         self.name = name
         self.parent = parent
+
+    def get_path(self):
+        return self.dirname+"/"+self.name
+
+    def to_node(self):
+        return self.get_path().replace(".","_").replace("@","at_").replace("/","_").replace("-","_").replace(":","_")
+
+
+    def def_node(self):
+        return to_node() +"[label=\"" + self.get_path()+"\"]"
+
+    def get_parent(self):
+        if self.parent is None:
+            return self.name[0:self.name.rfind(".")]
+        else:
+            return self.parent
+
+
 
 
 class Style:
@@ -17,7 +36,7 @@ class Style:
         self.elements = []
 
     def add(self,name,parent):
-        self.elements.append(StyleElement(name,parent))
+        self.elements.append(StyleElement(self.dirname,name,parent))
 
 
 def clean(value):
@@ -64,46 +83,29 @@ for style in styles:
     for element in style.elements:
         print "  "+def_node(style.dirname+"/"+element.name)+";"# + " -> " + clean(element.parent)
         for parentElement in style.elements:
-            if element.parent == parentElement.name:
-                    print "  "+to_node(style.dirname+"/"+element.name) + " -> " + to_node(style.dirname+"/"+element.parent)+";"
+            if element.get_parent() == parentElement.name:
+                    print "  "+element.to_node() + " -> " + to_node(style.dirname+"/"+element.get_parent())+";"
     print " }"
 for style in styles:
     for element in style.elements:
-        if element.parent:
+        if element.get_parent():
             selfReach = False
             contain = False
             for parentStyle in styles:
                 for parentElement in parentStyle.elements:
-                    if element.parent == parentElement.name:
+                    if element.get_parent() == parentElement.name:
                         contain = True
-                    if element.parent == parentElement.name and parentStyle != style:
-                        print " "+to_node(style.dirname+"/"+element.name) + " -> " + to_node(parentStyle.dirname+"/"+element.parent)+";"
+                    if element.get_parent() == parentElement.name and parentStyle != style:
+                        print " "+element.to_node() + " -> " + parentElement.to_node()+";"
                     if parentStyle == style:
                         selfReach = True
                         continue
                 if selfReach:
                     continue
             if not contain:
-                print " "+def_node(element.parent)
-                print " "+to_node(style.dirname+"/"+element.name) + " -> " + to_node(element.parent)+";"
+                print " "+def_node(element.get_parent())
+                print " "+element.to_node() + " -> " + to_node(element.get_parent())+";"
 
 print "}"
-
-
-"""
-digraph sample {
-  subgraph value {
-    label = "area 0";
-    a->b;
-    a->c;
-  }
-  subgraph values-v21 {
-    label = "area 1";
-    d->e;
-    d->f;
-  }
-  b->d; // ここを加える
-}
-"""
 
 
