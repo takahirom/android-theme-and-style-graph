@@ -52,13 +52,18 @@ class Style:
 
 
 styles = []
-for dirname in os.listdir("list"):
+if len(sys.argv)>1:
+    directory = sys.argv[1]
+else:
+    directory = "appcompat"
+
+for dirname in os.listdir(directory):
     if dirname.find("values")<0:
         continue
-    for file in os.listdir("list/"+dirname):
+    for file in os.listdir(directory+"/"+dirname):
         if file.find("styles") <0 and file.find("themes") <0:
             continue
-        text = open("list/"+dirname+"/"+file).read()
+        text = open(directory+"/"+dirname+"/"+file).read()
         style = Style(dirname+"/"+file)
         styles.append(style)
         data = etree.fromstring(text)
@@ -71,7 +76,7 @@ styles.sort()
 styles.reverse()
 for style in styles:
     print style.dirname
-sys.stdout = open('style.dot', 'w')
+sys.stdout = open(directory+'.dot', 'w')
 print "digraph {"
 print " rankdir=LR;"
 for style in styles:
