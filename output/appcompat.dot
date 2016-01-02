@@ -1,7 +1,7 @@
 digraph {
  rankdir=LR;
  subgraph values_v11_themes_base_xml {
-node [style=filled];
+node [style=filled;];
 node [color="#aaaaff"];
   
   label = "values-v11/themes_base.xml";
@@ -19,7 +19,7 @@ node [color="#aaaaff"];
   values_v11_themes_base_xml_Base_Theme_AppCompat_Light_Dialog -> values_v11_themes_base_xml_Base_V11_Theme_AppCompat_Light_Dialog;
  }
  subgraph values_v11_styles_base_text_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v11/styles_base_text.xml";
   values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse[label="values-v11/styles_base_text.xml/Base.TextAppearance.AppCompat.Title.Inverse";];
@@ -30,7 +30,7 @@ node [style=filled];
   values_v11_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse[label="values-v11/styles_base_text.xml/Base.TextAppearance.AppCompat.Small.Inverse";];
  }
  subgraph values_v11_styles_base_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v11/styles_base.xml";
   values_v11_styles_base_xml_Platform_Widget_AppCompat_Spinner[label="values-v11/styles_base.xml/Platform.Widget.AppCompat.Spinner";];
@@ -38,19 +38,19 @@ node [style=filled];
   values_v11_styles_base_xml_Base_Widget_AppCompat_ProgressBar[label="values-v11/styles_base.xml/Base.Widget.AppCompat.ProgressBar";];
  }
  subgraph values_ldrtl_v23_styles_base_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-ldrtl-v23/styles_base.xml";
   values_ldrtl_v23_styles_base_xml_Base_Widget_AppCompat_Spinner_Underlined[label="values-ldrtl-v23/styles_base.xml/Base.Widget.AppCompat.Spinner.Underlined";];
  }
  subgraph values_ldltr_v21_styles_base_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-ldltr-v21/styles_base.xml";
   values_ldltr_v21_styles_base_xml_Base_Widget_AppCompat_Spinner_Underlined[label="values-ldltr-v21/styles_base.xml/Base.Widget.AppCompat.Spinner.Underlined";];
  }
  subgraph values_large_themes_base_xml {
-node [style=filled];
+node [style=filled;];
 node [color="#aaaaff"];
   
   label = "values-large/themes_base.xml";
@@ -58,13 +58,13 @@ node [color="#aaaaff"];
   values_large_themes_base_xml_Base_Theme_AppCompat_Light_DialogWhenLarge[label="values-large/themes_base.xml/Base.Theme.AppCompat.Light.DialogWhenLarge";];
  }
  subgraph values_hdpi_styles_base_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-hdpi/styles_base.xml";
   values_hdpi_styles_base_xml_Base_Widget_AppCompat_DrawerArrowToggle[label="values-hdpi/styles_base.xml/Base.Widget.AppCompat.DrawerArrowToggle";];
  }
  subgraph values_v22_themes_base_xml {
-node [style=filled];
+node [style=filled;];
 node [color="#aaaaff"];
   
   label = "values-v22/themes_base.xml";
@@ -76,7 +76,7 @@ node [color="#aaaaff"];
   values_v22_themes_base_xml_Base_V22_Theme_AppCompat_Light[label="values-v22/themes_base.xml/Base.V22.Theme.AppCompat.Light";];
  }
  subgraph values_v21_styles_base_text_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v21/styles_base_text.xml";
   values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat[label="values-v21/styles_base_text.xml/Base.TextAppearance.AppCompat";];
@@ -103,7 +103,7 @@ node [style=filled];
   values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Switch[label="values-v21/styles_base_text.xml/Base.TextAppearance.AppCompat.Widget.Switch";];
  }
  subgraph values_v21_styles_base_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v21/styles_base.xml";
   values_v21_styles_base_xml_Base_Widget_AppCompat_ActionBar_TabView[label="values-v21/styles_base.xml/Base.Widget.AppCompat.ActionBar.TabView";];
@@ -161,7 +161,7 @@ node [style=filled];
   values_v21_styles_base_xml_Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem[label="values-v21/styles_base.xml/Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem";];
  }
  subgraph values_v21_themes_base_xml {
-node [style=filled];
+node [style=filled;];
 node [color="#aaaaff"];
   
   label = "values-v21/themes_base.xml";
@@ -186,7 +186,7 @@ node [color="#aaaaff"];
   values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat;
  }
  subgraph values_v17_styles_rtl_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v17/styles_rtl.xml";
   values_v17_styles_rtl_xml_RtlOverlay_Widget_AppCompat_SearchView_MagIcon[label="values-v17/styles_rtl.xml/RtlOverlay.Widget.AppCompat.SearchView.MagIcon";];
@@ -205,7 +205,7 @@ node [style=filled];
   values_v17_styles_rtl_xml_RtlOverlay_DialogWindowTitle_AppCompat[label="values-v17/styles_rtl.xml/RtlOverlay.DialogWindowTitle.AppCompat";];
  }
  subgraph values_v14_themes_base_xml {
-node [style=filled];
+node [style=filled;];
 node [color="#aaaaff"];
   
   label = "values-v14/themes_base.xml";
@@ -217,13 +217,13 @@ node [color="#aaaaff"];
   values_v14_themes_base_xml_Platform_V14_AppCompat_Light[label="values-v14/themes_base.xml/Platform.V14.AppCompat.Light";];
  }
  subgraph values_v14_styles_base_text_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v14/styles_base_text.xml";
   values_v14_styles_base_text_xml_Base_TextAppearance_AppCompat_Button[label="values-v14/styles_base_text.xml/Base.TextAppearance.AppCompat.Button";];
  }
  subgraph values_v14_styles_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v14/styles.xml";
   values_v14_styles_xml_TextAppearance_StatusBar_EventContent[label="values-v14/styles.xml/TextAppearance.StatusBar.EventContent";];
@@ -236,7 +236,7 @@ node [style=filled];
   values_v14_styles_xml_TextAppearance_StatusBar_EventContent_Time -> values_v14_styles_xml_TextAppearance_StatusBar_EventContent;
  }
  subgraph values_v23_themes_base_xml {
-node [style=filled];
+node [style=filled;];
 node [color="#aaaaff"];
   
   label = "values-v23/themes_base.xml";
@@ -248,19 +248,19 @@ node [color="#aaaaff"];
   values_v23_themes_base_xml_Base_V23_Theme_AppCompat_Light[label="values-v23/themes_base.xml/Base.V23.Theme.AppCompat.Light";];
  }
  subgraph values_v23_styles_base_text_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v23/styles_base_text.xml";
   values_v23_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button_Inverse[label="values-v23/styles_base_text.xml/Base.TextAppearance.AppCompat.Widget.Button.Inverse";];
  }
  subgraph values_v23_styles_base_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v23/styles_base.xml";
   values_v23_styles_base_xml_Base_Widget_AppCompat_Button_Colored[label="values-v23/styles_base.xml/Base.Widget.AppCompat.Button.Colored";];
  }
  subgraph values_themes_xml {
-node [style=filled];
+node [style=filled;];
 node [color="#aaaaff"];
   
   label = "values/themes.xml";
@@ -287,7 +287,7 @@ node [color="#aaaaff"];
   values_themes_xml_ThemeOverlay_AppCompat_Dark_ActionBar[label="values/themes.xml/ThemeOverlay.AppCompat.Dark.ActionBar";];
  }
  subgraph values_styles_rtl_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values/styles_rtl.xml";
   values_styles_rtl_xml_RtlOverlay_Widget_AppCompat_SearchView_MagIcon[label="values/styles_rtl.xml/RtlOverlay.Widget.AppCompat.SearchView.MagIcon";];
@@ -305,69 +305,8 @@ node [style=filled];
   values_styles_rtl_xml_RtlOverlay_Widget_AppCompat_DialogTitle_Icon[label="values/styles_rtl.xml/RtlOverlay.Widget.AppCompat.DialogTitle.Icon";];
   values_styles_rtl_xml_RtlOverlay_DialogWindowTitle_AppCompat[label="values/styles_rtl.xml/RtlOverlay.DialogWindowTitle.AppCompat";];
  }
- subgraph values_v12_styles_base_xml {
-node [style=filled];
-  
-  label = "values-v12/styles_base.xml";
-  values_v12_styles_base_xml_Base_Widget_AppCompat_EditText[label="values-v12/styles_base.xml/Base.Widget.AppCompat.EditText";];
-  values_v12_styles_base_xml_Base_Widget_AppCompat_EditText -> values_v12_styles_base_xml_Base_V12_Widget_AppCompat_EditText;
-  values_v12_styles_base_xml_Base_V12_Widget_AppCompat_EditText[label="values-v12/styles_base.xml/Base.V12.Widget.AppCompat.EditText";];
-  values_v12_styles_base_xml_Base_Widget_AppCompat_AutoCompleteTextView[label="values-v12/styles_base.xml/Base.Widget.AppCompat.AutoCompleteTextView";];
-  values_v12_styles_base_xml_Base_Widget_AppCompat_AutoCompleteTextView -> values_v12_styles_base_xml_Base_V12_Widget_AppCompat_AutoCompleteTextView;
-  values_v12_styles_base_xml_Base_V12_Widget_AppCompat_AutoCompleteTextView[label="values-v12/styles_base.xml/Base.V12.Widget.AppCompat.AutoCompleteTextView";];
- }
- subgraph values_styles_base_text_xml {
-node [style=filled];
-  
-  label = "values/styles_base_text.xml";
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display4";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display3";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display2";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display1";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Headline";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Title";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Title.Inverse";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Subhead";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Subhead.Inverse";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Body2";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Body1";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Caption";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Menu";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Button";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Widget.Button";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Widget.Button.Inverse";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Inverse";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Large";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Large.Inverse";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Medium";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Medium.Inverse";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Small";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Small.Inverse";];
-  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small;
- }
  subgraph values_themes_base_xml {
-node [style=filled];
+node [style=filled;];
 node [color="#aaaaff"];
   
   label = "values/themes_base.xml";
@@ -422,8 +361,69 @@ node [color="#aaaaff"];
   values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark_ActionBar[label="values/themes_base.xml/Base.ThemeOverlay.AppCompat.Dark.ActionBar";];
   values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark_ActionBar -> values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark;
  }
+ subgraph values_v12_styles_base_xml {
+node [style=filled;];
+  
+  label = "values-v12/styles_base.xml";
+  values_v12_styles_base_xml_Base_Widget_AppCompat_EditText[label="values-v12/styles_base.xml/Base.Widget.AppCompat.EditText";];
+  values_v12_styles_base_xml_Base_Widget_AppCompat_EditText -> values_v12_styles_base_xml_Base_V12_Widget_AppCompat_EditText;
+  values_v12_styles_base_xml_Base_V12_Widget_AppCompat_EditText[label="values-v12/styles_base.xml/Base.V12.Widget.AppCompat.EditText";];
+  values_v12_styles_base_xml_Base_Widget_AppCompat_AutoCompleteTextView[label="values-v12/styles_base.xml/Base.Widget.AppCompat.AutoCompleteTextView";];
+  values_v12_styles_base_xml_Base_Widget_AppCompat_AutoCompleteTextView -> values_v12_styles_base_xml_Base_V12_Widget_AppCompat_AutoCompleteTextView;
+  values_v12_styles_base_xml_Base_V12_Widget_AppCompat_AutoCompleteTextView[label="values-v12/styles_base.xml/Base.V12.Widget.AppCompat.AutoCompleteTextView";];
+ }
+ subgraph values_styles_base_text_xml {
+node [style=filled;];
+  
+  label = "values/styles_base_text.xml";
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display4";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display3";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display2";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Display1";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Headline";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Title";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Title.Inverse";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Subhead";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Subhead.Inverse";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Body2";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Body1";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1 -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Caption";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Menu";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Button";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Widget.Button";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Widget.Button.Inverse";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Inverse";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Large";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Large.Inverse";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Medium";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Medium.Inverse";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Small";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small -> values_styles_base_text_xml_Base_TextAppearance_AppCompat;
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse[label="values/styles_base_text.xml/Base.TextAppearance.AppCompat.Small.Inverse";];
+  values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse -> values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small;
+ }
  subgraph values_styles_base_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values/styles_base.xml";
   values_styles_base_xml_Base_Widget_AppCompat_ActionBar[label="values/styles_base.xml/Base.Widget.AppCompat.ActionBar";];
@@ -535,7 +535,7 @@ node [style=filled];
   values_styles_base_xml_Base_AlertDialog_AppCompat_Light -> values_styles_base_xml_Base_AlertDialog_AppCompat;
  }
  subgraph values_styles_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values/styles.xml";
   values_styles_xml_Widget_AppCompat_ActionBar[label="values/styles.xml/Widget.AppCompat.ActionBar";];
@@ -967,33 +967,6 @@ node [style=filled];
  android_Widget[label="android:Widget"]
  values_styles_rtl_xml_RtlOverlay_Widget_AppCompat_DialogTitle_Icon -> android_Widget;
  values_styles_rtl_xml_RtlOverlay_DialogWindowTitle_AppCompat -> values_styles_base_xml_Base_DialogWindowTitle_AppCompat;
- values_v12_styles_base_xml_Base_V12_Widget_AppCompat_EditText -> values_styles_base_xml_Base_V7_Widget_AppCompat_EditText;
- values_v12_styles_base_xml_Base_V12_Widget_AppCompat_AutoCompleteTextView -> values_styles_base_xml_Base_V7_Widget_AppCompat_AutoCompleteTextView;
- android_TextAppearance[label="android:TextAppearance"]
- values_styles_base_text_xml_Base_TextAppearance_AppCompat -> android_TextAppearance;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Title;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button -> values_styles_xml_TextAppearance_AppCompat_Button;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button_Inverse -> values_styles_xml_TextAppearance_AppCompat_Button;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Large;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
- values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Small;
  android_Theme[label="android:Theme"]
  values_themes_base_xml_Platform_AppCompat -> android_Theme;
  android_Theme_Light[label="android:Theme.Light"]
@@ -1032,6 +1005,33 @@ node [style=filled];
  values_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat;
  values_themes_base_xml_Base_ThemeOverlay_AppCompat_Light -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Light;
  values_themes_base_xml_Base_ThemeOverlay_AppCompat_Dark -> values_v21_themes_base_xml_Platform_ThemeOverlay_AppCompat_Dark;
+ values_v12_styles_base_xml_Base_V12_Widget_AppCompat_EditText -> values_styles_base_xml_Base_V7_Widget_AppCompat_EditText;
+ values_v12_styles_base_xml_Base_V12_Widget_AppCompat_AutoCompleteTextView -> values_styles_base_xml_Base_V7_Widget_AppCompat_AutoCompleteTextView;
+ android_TextAppearance[label="android:TextAppearance"]
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat -> android_TextAppearance;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display4 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display3 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display2 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Display1 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Headline -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Title_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Title;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Subhead;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body2 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Body1 -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Caption -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Menu -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Button -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button -> values_styles_xml_TextAppearance_AppCompat_Button;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Widget_Button_Inverse -> values_styles_xml_TextAppearance_AppCompat_Button;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Large_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Large;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Medium;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat;
+ values_styles_base_text_xml_Base_TextAppearance_AppCompat_Small_Inverse -> values_v21_styles_base_text_xml_Base_TextAppearance_AppCompat_Small;
  values_styles_base_xml_Base_Widget_AppCompat_ActionButton -> values_v17_styles_rtl_xml_RtlUnderlay_Widget_AppCompat_ActionButton;
  values_styles_base_xml_Base_Widget_AppCompat_ActionButton -> values_styles_rtl_xml_RtlUnderlay_Widget_AppCompat_ActionButton;
  values_styles_base_xml_Base_Widget_AppCompat_ActionButton_CloseMode -> values_v21_styles_base_xml_Base_Widget_AppCompat_ActionButton;

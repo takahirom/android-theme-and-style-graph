@@ -1,7 +1,7 @@
 digraph {
  rankdir=LR;
  subgraph values_v21_styles_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v21/styles.xml";
   values_v21_styles_xml_Theme_IOSched[label="values-v21/styles.xml/Theme.IOSched";];
@@ -12,19 +12,19 @@ node [style=filled];
   values_v21_styles_xml_TabIndicator[label="values-v21/styles.xml/TabIndicator";];
  }
  subgraph values_v17_styles_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-v17/styles.xml";
   values_v17_styles_xml_FrameworkRoot_Theme[label="values-v17/styles.xml/FrameworkRoot.Theme";];
  }
  subgraph values_sw600dp_v21_styles_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-sw600dp-v21/styles.xml";
   values_sw600dp_v21_styles_xml_Theme_IOSched_SessionDetails[label="values-sw600dp-v21/styles.xml/Theme.IOSched.SessionDetails";];
  }
  subgraph values_sw600dp_styles_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values-sw600dp/styles.xml";
   values_sw600dp_styles_xml_Theme_IOSched_SessionDetails_Base[label="values-sw600dp/styles.xml/Theme.IOSched.SessionDetails.Base";];
@@ -32,7 +32,7 @@ node [style=filled];
   values_sw600dp_styles_xml_Theme_IOSched_SessionDetails -> values_sw600dp_styles_xml_Theme_IOSched_SessionDetails_Base;
  }
  subgraph values_styles_xml {
-node [style=filled];
+node [style=filled;];
   
   label = "values/styles.xml";
   values_styles_xml_FrameworkRoot_Theme[label="values/styles.xml/FrameworkRoot.Theme";];

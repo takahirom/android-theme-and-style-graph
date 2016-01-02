@@ -1,0 +1,42 @@
+def logger = Logging.getLogger(this.class)
+
+def execute (directory, query="") {
+    def postfix = ""
+    if (null != query && "" != query){
+        postfix = "_"+ query
+    }
+	def outputFilePath = "output/" + directory + postfix
+	println "outputFilePath:" + outputFilePath
+
+	logger.lifecycle("Parse styles directory:" + directory + " query:" + query)
+	print (("python parse.py " + directory + " " + query).execute().text)
+	logger.lifecycle("Generate pdf")
+	print (("dot -Tpdf output/" + directory + ".dot -o " + outputFilePath + ".pdf").execute().text)
+	logger.lifecycle("Generate jpg")
+	print (("dot -Tjpg output/" + directory + ".dot -o " + outputFilePath + ".jpg").execute().text)
+	logger.lifecycle("Generate small jpg")
+	print (("convert output/" + directory + postfix + ".jpg -resize 50% output" + "/small_" + directory +  postfix  + ".jpg").execute().text)
+}
+
+task buildAppCompat << {
+    if(project.hasProperty("query")){
+        execute ("appcompat",query)
+	} else {
+        execute ("appcompat")
+    }
+}
+task buildIosched << {
+    if(project.hasProperty("query")){
+        execute ("iosched",query)
+	} else {
+        execute ("iosched")
+	}
+}
+
+task buildAll << {
+	buildAppCompat.execute()
+	buildIosched.execute()
+	project.ext.query = "colorPrimary"
+	buildAppCompat.execute()
+	buildIosched.execute()
+}

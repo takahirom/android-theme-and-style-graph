@@ -40,18 +40,15 @@ class StyleElement:
                     is_define = True
         if search_item:
             for key in self.item_dict.values():
-                if key.find(search_item) > -1:
-                    if key[-len(search_item):] == search_item:
-                        is_use = True
+                if key[-len(search_item):] == search_item:
+                    is_use = True
         color = None
         if is_define:
-            color = "\"#ffaaaa\""
+            color = "\"#ffffaa\""
         if is_use:
             color = "\"#aaffaa\""
         if is_use and is_define:
-            color = "\"#aaffff\""
-            color = "yellow"
-
+            color = "\"#ffffaa\""
         return self.to_node() + "[label=\"" + self.get_path() + "\";" + ("color=" + color + ";" if color else "") + "]"
 
     def get_parent(self):
@@ -107,15 +104,15 @@ sys.stdout = open("output/" + directory + '.dot', 'w')
 print "digraph {"
 
 if searchItem:
-    print "define[color=\"#ffaaaa\"]"
-    print "use[color=\"#aaffaa\"]"
-    print "both[color=\"#aaffff\"]"
+    print "define[label=\"<item name='..."+searchItem+"'>...</item>\",fillcolor=\"#ffaaaa\",style=filled];"
+    print "use[label=\"<item name='...'>..."+searchItem+"</item>\",fillcolor=\"#aaffaa\",style=filled];"
+    print "both[label=\"<item name='..."+searchItem+"'>..."+searchItem+"</item>\",fillcolor=\"#ffffaa\",style=filled];"
 
 print " rankdir=LR;"
 for style in styles:
     # print " subgraph cluster_"+to_node(style.dirname) +" {"
     print " subgraph " + to_node(style.dirname) + " {"
-    print "node [style=filled];"
+    print "node [style=filled;];"
     if style.dirname.find("themes") > -1:
         print "node [color=\"#aaaaff\"];"
 
