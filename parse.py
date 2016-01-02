@@ -76,7 +76,7 @@ styles.sort()
 styles.reverse()
 for style in styles:
     print style.dirname
-sys.stdout = open(directory+'.dot', 'w')
+sys.stdout = open("output/"+directory+'.dot', 'w')
 print "digraph {"
 print " rankdir=LR;"
 for style in styles:
