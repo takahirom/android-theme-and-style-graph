@@ -18,7 +18,9 @@ def def_node(value):
 
 
 class StyleElement:
-    def __init__(self, dirname, name, parent):
+    def __init__(self, dirname, name, parent, item_dict):
+        isinstance(item_dict, dict)
+        self.item_dict = item_dict
         self.dirname = dirname
         self.name = name
         self.parent = parent
@@ -29,8 +31,28 @@ class StyleElement:
     def to_node(self):
         return to_node(self.get_path())
 
-    def def_node(self):
-        return self.to_node() + "[label=\"" + self.get_path() + "\"]"
+    def def_node(self, search_item):
+        is_define = False
+        is_use = False
+        if search_item:
+            for key in self.item_dict.keys():
+                if key[-len(search_item):] == search_item:
+                    is_define = True
+        if search_item:
+            for key in self.item_dict.values():
+                if key.find(search_item) > -1:
+                    if key[-len(search_item):] == search_item:
+                        is_use = True
+        color = None
+        if is_define:
+            color = "\"#ffaaaa\""
+        if is_use:
+            color = "\"#aaffaa\""
+        if is_use and is_define:
+            color = "\"#aaffff\""
+            color = "yellow"
+
+        return self.to_node() + "[label=\"" + self.get_path() + "\";" + ("color=" + color + ";" if color else "") + "]"
 
     def get_parent(self):
         if self.parent is None:
@@ -44,8 +66,8 @@ class Style:
         self.dirname = dirname
         self.elements = []
 
-    def add(self, name, parent):
-        self.elements.append(StyleElement(self.dirname, name, parent))
+    def add(self, name, parent, item_dict):
+        self.elements.append(StyleElement(self.dirname, name, parent, item_dict))
 
 
 styles = []
@@ -53,6 +75,11 @@ if len(sys.argv) > 1:
     directory = sys.argv[1]
 else:
     directory = "appcompat"
+
+if len(sys.argv) > 2:
+    searchItem = sys.argv[2]
+else:
+    searchItem = None
 
 for dirname in os.listdir(directory):
     if dirname.find("values") < 0:
@@ -66,7 +93,11 @@ for dirname in os.listdir(directory):
         data = etree.fromstring(text)
         if 0: assert isinstance(data, etree.Element)
         for rawStyle in data.findall("style"):
-            style.add(rawStyle.get("name"), rawStyle.get("parent"))
+            item_dict = {}
+            for item in rawStyle.findall("item"):
+                if 0: assert isinstance(item, dict)
+                item_dict.update({item.get("name"): item.text})
+            style.add(rawStyle.get("name"), rawStyle.get("parent"), item_dict)
 
 styles.sort()
 styles.reverse()
@@ -74,21 +105,25 @@ for style in styles:
     print style.dirname
 sys.stdout = open("output/" + directory + '.dot', 'w')
 print "digraph {"
+
+if searchItem:
+    print "define[color=\"#ffaaaa\"]"
+    print "use[color=\"#aaffaa\"]"
+    print "both[color=\"#aaffff\"]"
+
 print " rankdir=LR;"
 for style in styles:
     # print " subgraph cluster_"+to_node(style.dirname) +" {"
     print " subgraph " + to_node(style.dirname) + " {"
+    print "node [style=filled];"
     if style.dirname.find("themes") > -1:
-        print "node [style=filled,color=\"#aaaaff\"];"
+        print "node [color=\"#aaaaff\"];"
 
     print "  "
     print "  label = " + clean(style.dirname) + ";"
-    print """
-    style = "dashed";
-            """
 
     for element in style.elements:
-        print "  " + element.def_node() + ";"  # + " -> " + clean(element.parent)
+        print "  " + element.def_node(searchItem) + ";"  # + " -> " + clean(element.parent)
         for parentElement in style.elements:
             if element.get_parent() == parentElement.name:
                 print "  " + element.to_node() + " -> " + to_node(style.dirname + "/" + element.get_parent()) + ";"

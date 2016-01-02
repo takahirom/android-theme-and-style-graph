@@ -1,146 +1,136 @@
 digraph {
  rankdir=LR;
  subgraph values_v21_styles_xml {
+node [style=filled];
   
   label = "values-v21/styles.xml";
-
-    style = "dashed";
-            
-  values_v21_styles_xml_Theme_IOSched[label="values-v21/styles.xml/Theme.IOSched"];
-  values_v21_styles_xml_Theme_IOSched_WithNavDrawer[label="values-v21/styles.xml/Theme.IOSched.WithNavDrawer"];
+  values_v21_styles_xml_Theme_IOSched[label="values-v21/styles.xml/Theme.IOSched";];
+  values_v21_styles_xml_Theme_IOSched_WithNavDrawer[label="values-v21/styles.xml/Theme.IOSched.WithNavDrawer";];
   values_v21_styles_xml_Theme_IOSched_WithNavDrawer -> values_v21_styles_xml_Theme_IOSched;
-  values_v21_styles_xml_Theme_IOSched_AlertDialog[label="values-v21/styles.xml/Theme.IOSched.AlertDialog"];
-  values_v21_styles_xml_Widget_IOSched_HeaderBar_Spinner[label="values-v21/styles.xml/Widget.IOSched.HeaderBar.Spinner"];
-  values_v21_styles_xml_TabIndicator[label="values-v21/styles.xml/TabIndicator"];
+  values_v21_styles_xml_Theme_IOSched_AlertDialog[label="values-v21/styles.xml/Theme.IOSched.AlertDialog";];
+  values_v21_styles_xml_Widget_IOSched_HeaderBar_Spinner[label="values-v21/styles.xml/Widget.IOSched.HeaderBar.Spinner";];
+  values_v21_styles_xml_TabIndicator[label="values-v21/styles.xml/TabIndicator";];
  }
  subgraph values_v17_styles_xml {
+node [style=filled];
   
   label = "values-v17/styles.xml";
-
-    style = "dashed";
-            
-  values_v17_styles_xml_FrameworkRoot_Theme[label="values-v17/styles.xml/FrameworkRoot.Theme"];
+  values_v17_styles_xml_FrameworkRoot_Theme[label="values-v17/styles.xml/FrameworkRoot.Theme";];
  }
  subgraph values_sw600dp_v21_styles_xml {
+node [style=filled];
   
   label = "values-sw600dp-v21/styles.xml";
-
-    style = "dashed";
-            
-  values_sw600dp_v21_styles_xml_Theme_IOSched_SessionDetails[label="values-sw600dp-v21/styles.xml/Theme.IOSched.SessionDetails"];
+  values_sw600dp_v21_styles_xml_Theme_IOSched_SessionDetails[label="values-sw600dp-v21/styles.xml/Theme.IOSched.SessionDetails";];
  }
  subgraph values_sw600dp_styles_xml {
+node [style=filled];
   
   label = "values-sw600dp/styles.xml";
-
-    style = "dashed";
-            
-  values_sw600dp_styles_xml_Theme_IOSched_SessionDetails_Base[label="values-sw600dp/styles.xml/Theme.IOSched.SessionDetails.Base"];
-  values_sw600dp_styles_xml_Theme_IOSched_SessionDetails[label="values-sw600dp/styles.xml/Theme.IOSched.SessionDetails"];
+  values_sw600dp_styles_xml_Theme_IOSched_SessionDetails_Base[label="values-sw600dp/styles.xml/Theme.IOSched.SessionDetails.Base";];
+  values_sw600dp_styles_xml_Theme_IOSched_SessionDetails[label="values-sw600dp/styles.xml/Theme.IOSched.SessionDetails";];
   values_sw600dp_styles_xml_Theme_IOSched_SessionDetails -> values_sw600dp_styles_xml_Theme_IOSched_SessionDetails_Base;
  }
  subgraph values_styles_xml {
+node [style=filled];
   
   label = "values/styles.xml";
-
-    style = "dashed";
-            
-  values_styles_xml_FrameworkRoot_Theme[label="values/styles.xml/FrameworkRoot.Theme"];
-  values_styles_xml_FrameworkRoot_Widget[label="values/styles.xml/FrameworkRoot.Widget"];
-  values_styles_xml_Theme[label="values/styles.xml/Theme"];
+  values_styles_xml_FrameworkRoot_Theme[label="values/styles.xml/FrameworkRoot.Theme";];
+  values_styles_xml_FrameworkRoot_Widget[label="values/styles.xml/FrameworkRoot.Widget";];
+  values_styles_xml_Theme[label="values/styles.xml/Theme";];
   values_styles_xml_Theme -> values_styles_xml_FrameworkRoot_Theme;
-  values_styles_xml_Theme_IOSched_Base[label="values/styles.xml/Theme.IOSched.Base"];
+  values_styles_xml_Theme_IOSched_Base[label="values/styles.xml/Theme.IOSched.Base";];
   values_styles_xml_Theme_IOSched_Base -> values_styles_xml_Theme;
-  values_styles_xml_Theme_IOSched[label="values/styles.xml/Theme.IOSched"];
+  values_styles_xml_Theme_IOSched[label="values/styles.xml/Theme.IOSched";];
   values_styles_xml_Theme_IOSched -> values_styles_xml_Theme_IOSched_Base;
-  values_styles_xml_Theme_IOSched_WithNavDrawer[label="values/styles.xml/Theme.IOSched.WithNavDrawer"];
+  values_styles_xml_Theme_IOSched_WithNavDrawer[label="values/styles.xml/Theme.IOSched.WithNavDrawer";];
   values_styles_xml_Theme_IOSched_WithNavDrawer -> values_styles_xml_Theme_IOSched;
-  values_styles_xml_Theme_IOSched_Widget[label="values/styles.xml/Theme.IOSched.Widget"];
+  values_styles_xml_Theme_IOSched_Widget[label="values/styles.xml/Theme.IOSched.Widget";];
   values_styles_xml_Theme_IOSched_Widget -> values_styles_xml_FrameworkRoot_Widget;
-  values_styles_xml_ActionBarThemeOverlay[label="values/styles.xml/ActionBarThemeOverlay"];
-  values_styles_xml_SearchViewTheme[label="values/styles.xml/SearchViewTheme"];
-  values_styles_xml_ActionBarPopupThemeOverlay[label="values/styles.xml/ActionBarPopupThemeOverlay"];
-  values_styles_xml_Theme_IOSched_Welcome[label="values/styles.xml/Theme.IOSched.Welcome"];
+  values_styles_xml_ActionBarThemeOverlay[label="values/styles.xml/ActionBarThemeOverlay";];
+  values_styles_xml_SearchViewTheme[label="values/styles.xml/SearchViewTheme";];
+  values_styles_xml_ActionBarPopupThemeOverlay[label="values/styles.xml/ActionBarPopupThemeOverlay";];
+  values_styles_xml_Theme_IOSched_Welcome[label="values/styles.xml/Theme.IOSched.Welcome";];
   values_styles_xml_Theme_IOSched_Welcome -> values_styles_xml_Theme_IOSched;
-  values_styles_xml_Theme_IOSched_Sessions[label="values/styles.xml/Theme.IOSched.Sessions"];
+  values_styles_xml_Theme_IOSched_Sessions[label="values/styles.xml/Theme.IOSched.Sessions";];
   values_styles_xml_Theme_IOSched_Sessions -> values_styles_xml_Theme_IOSched_WithNavDrawer;
-  values_styles_xml_Theme_IOSched_Search[label="values/styles.xml/Theme.IOSched.Search"];
+  values_styles_xml_Theme_IOSched_Search[label="values/styles.xml/Theme.IOSched.Search";];
   values_styles_xml_Theme_IOSched_Search -> values_styles_xml_Theme_IOSched;
-  values_styles_xml_Widget_IOSched_SearchView[label="values/styles.xml/Widget.IOSched.SearchView"];
-  values_styles_xml_Widget_IOSched_Search_AutoCompleteTextView[label="values/styles.xml/Widget.IOSched.Search.AutoCompleteTextView"];
-  values_styles_xml_Theme_IOSched_VideoLibrary[label="values/styles.xml/Theme.IOSched.VideoLibrary"];
+  values_styles_xml_Widget_IOSched_SearchView[label="values/styles.xml/Widget.IOSched.SearchView";];
+  values_styles_xml_Widget_IOSched_Search_AutoCompleteTextView[label="values/styles.xml/Widget.IOSched.Search.AutoCompleteTextView";];
+  values_styles_xml_Theme_IOSched_VideoLibrary[label="values/styles.xml/Theme.IOSched.VideoLibrary";];
   values_styles_xml_Theme_IOSched_VideoLibrary -> values_styles_xml_Theme_IOSched_WithNavDrawer;
-  values_styles_xml_Theme_IOSched_Feedback[label="values/styles.xml/Theme.IOSched.Feedback"];
+  values_styles_xml_Theme_IOSched_Feedback[label="values/styles.xml/Theme.IOSched.Feedback";];
   values_styles_xml_Theme_IOSched_Feedback -> values_styles_xml_Theme_IOSched;
-  values_styles_xml_Widget_IOSched_HeaderBar_Spinner_Base[label="values/styles.xml/Widget.IOSched.HeaderBar.Spinner.Base"];
-  values_styles_xml_Widget_IOSched_HeaderBar_Spinner[label="values/styles.xml/Widget.IOSched.HeaderBar.Spinner"];
+  values_styles_xml_Widget_IOSched_HeaderBar_Spinner_Base[label="values/styles.xml/Widget.IOSched.HeaderBar.Spinner.Base";];
+  values_styles_xml_Widget_IOSched_HeaderBar_Spinner[label="values/styles.xml/Widget.IOSched.HeaderBar.Spinner";];
   values_styles_xml_Widget_IOSched_HeaderBar_Spinner -> values_styles_xml_Widget_IOSched_HeaderBar_Spinner_Base;
-  values_styles_xml_Widget_IOSched_PopupMenu[label="values/styles.xml/Widget.IOSched.PopupMenu"];
-  values_styles_xml_Widget_IOSched_ListView_DropDown[label="values/styles.xml/Widget.IOSched.ListView.DropDown"];
-  values_styles_xml_TextAppearance_LargePopupMenu[label="values/styles.xml/TextAppearance.LargePopupMenu"];
-  values_styles_xml_Theme_IOSched_MySchedule[label="values/styles.xml/Theme.IOSched.MySchedule"];
+  values_styles_xml_Widget_IOSched_PopupMenu[label="values/styles.xml/Widget.IOSched.PopupMenu";];
+  values_styles_xml_Widget_IOSched_ListView_DropDown[label="values/styles.xml/Widget.IOSched.ListView.DropDown";];
+  values_styles_xml_TextAppearance_LargePopupMenu[label="values/styles.xml/TextAppearance.LargePopupMenu";];
+  values_styles_xml_Theme_IOSched_MySchedule[label="values/styles.xml/Theme.IOSched.MySchedule";];
   values_styles_xml_Theme_IOSched_MySchedule -> values_styles_xml_Theme_IOSched_WithNavDrawer;
-  values_styles_xml_Theme_IOSched_SessionDetails_Base[label="values/styles.xml/Theme.IOSched.SessionDetails.Base"];
+  values_styles_xml_Theme_IOSched_SessionDetails_Base[label="values/styles.xml/Theme.IOSched.SessionDetails.Base";];
   values_styles_xml_Theme_IOSched_SessionDetails_Base -> values_styles_xml_Theme_IOSched;
-  values_styles_xml_Theme_IOSched_SessionDetails[label="values/styles.xml/Theme.IOSched.SessionDetails"];
+  values_styles_xml_Theme_IOSched_SessionDetails[label="values/styles.xml/Theme.IOSched.SessionDetails";];
   values_styles_xml_Theme_IOSched_SessionDetails -> values_styles_xml_Theme_IOSched_SessionDetails_Base;
-  values_styles_xml_Theme_IOSched_Social[label="values/styles.xml/Theme.IOSched.Social"];
+  values_styles_xml_Theme_IOSched_Social[label="values/styles.xml/Theme.IOSched.Social";];
   values_styles_xml_Theme_IOSched_Social -> values_styles_xml_Theme_IOSched_WithNavDrawer;
-  values_styles_xml_Theme_IOSched_Accounts[label="values/styles.xml/Theme.IOSched.Accounts"];
+  values_styles_xml_Theme_IOSched_Accounts[label="values/styles.xml/Theme.IOSched.Accounts";];
   values_styles_xml_Theme_IOSched_Accounts -> values_styles_xml_Theme_IOSched;
-  values_styles_xml_ActionBar_Accounts[label="values/styles.xml/ActionBar.Accounts"];
-  values_styles_xml_TabIndicator[label="values/styles.xml/TabIndicator"];
-  values_styles_xml_Theme_IOSched_Livestream[label="values/styles.xml/Theme.IOSched.Livestream"];
+  values_styles_xml_ActionBar_Accounts[label="values/styles.xml/ActionBar.Accounts";];
+  values_styles_xml_TabIndicator[label="values/styles.xml/TabIndicator";];
+  values_styles_xml_Theme_IOSched_Livestream[label="values/styles.xml/Theme.IOSched.Livestream";];
   values_styles_xml_Theme_IOSched_Livestream -> values_styles_xml_Theme_IOSched;
-  values_styles_xml_EmptyText[label="values/styles.xml/EmptyText"];
-  values_styles_xml_TextHeader[label="values/styles.xml/TextHeader"];
-  values_styles_xml_TextHeaderSub[label="values/styles.xml/TextHeaderSub"];
-  values_styles_xml_TextBody[label="values/styles.xml/TextBody"];
-  values_styles_xml_SessionLiveStreamed[label="values/styles.xml/SessionLiveStreamed"];
-  values_styles_xml_TextAppearance_Body2[label="values/styles.xml/TextAppearance.Body2"];
-  values_styles_xml_TextAppearance_Body1[label="values/styles.xml/TextAppearance.Body1"];
-  values_styles_xml_TextAppearance_Filter[label="values/styles.xml/TextAppearance.Filter"];
+  values_styles_xml_EmptyText[label="values/styles.xml/EmptyText";];
+  values_styles_xml_TextHeader[label="values/styles.xml/TextHeader";];
+  values_styles_xml_TextHeaderSub[label="values/styles.xml/TextHeaderSub";];
+  values_styles_xml_TextBody[label="values/styles.xml/TextBody";];
+  values_styles_xml_SessionLiveStreamed[label="values/styles.xml/SessionLiveStreamed";];
+  values_styles_xml_TextAppearance_Body2[label="values/styles.xml/TextAppearance.Body2";];
+  values_styles_xml_TextAppearance_Body1[label="values/styles.xml/TextAppearance.Body1";];
+  values_styles_xml_TextAppearance_Filter[label="values/styles.xml/TextAppearance.Filter";];
   values_styles_xml_TextAppearance_Filter -> values_styles_xml_TextAppearance_Body1;
-  values_styles_xml_TextAppearance_SessionTitle[label="values/styles.xml/TextAppearance.SessionTitle"];
+  values_styles_xml_TextAppearance_SessionTitle[label="values/styles.xml/TextAppearance.SessionTitle";];
   values_styles_xml_TextAppearance_SessionTitle -> values_styles_xml_TextAppearance_Body2;
-  values_styles_xml_TextAppearance_VideoDuration[label="values/styles.xml/TextAppearance.VideoDuration"];
-  values_styles_xml_TextAppearance_Title[label="values/styles.xml/TextAppearance.Title"];
-  values_styles_xml_TextAppearance_Subhead[label="values/styles.xml/TextAppearance.Subhead"];
+  values_styles_xml_TextAppearance_VideoDuration[label="values/styles.xml/TextAppearance.VideoDuration";];
+  values_styles_xml_TextAppearance_Title[label="values/styles.xml/TextAppearance.Title";];
+  values_styles_xml_TextAppearance_Subhead[label="values/styles.xml/TextAppearance.Subhead";];
   values_styles_xml_TextAppearance_Subhead -> values_styles_xml_TextAppearance_Body2;
-  values_styles_xml_SessionTimeHint[label="values/styles.xml/SessionTimeHint"];
+  values_styles_xml_SessionTimeHint[label="values/styles.xml/SessionTimeHint";];
   values_styles_xml_SessionTimeHint -> values_styles_xml_TextBody;
-  values_styles_xml_ExploreItem_Title[label="values/styles.xml/ExploreItem.Title"];
-  values_styles_xml_ExploreItem_Title_Hero[label="values/styles.xml/ExploreItem.Title.Hero"];
+  values_styles_xml_ExploreItem_Title[label="values/styles.xml/ExploreItem.Title";];
+  values_styles_xml_ExploreItem_Title_Hero[label="values/styles.xml/ExploreItem.Title.Hero";];
   values_styles_xml_ExploreItem_Title_Hero -> values_styles_xml_ExploreItem_Title;
-  values_styles_xml_ExploreItem_Subtitle[label="values/styles.xml/ExploreItem.Subtitle"];
-  values_styles_xml_ExploreItem_Subtitle_Hero[label="values/styles.xml/ExploreItem.Subtitle.Hero"];
+  values_styles_xml_ExploreItem_Subtitle[label="values/styles.xml/ExploreItem.Subtitle";];
+  values_styles_xml_ExploreItem_Subtitle_Hero[label="values/styles.xml/ExploreItem.Subtitle.Hero";];
   values_styles_xml_ExploreItem_Subtitle_Hero -> values_styles_xml_ExploreItem_Subtitle;
-  values_styles_xml_ExploreItem_Snippet[label="values/styles.xml/ExploreItem.Snippet"];
-  values_styles_xml_ExploreItem_Category[label="values/styles.xml/ExploreItem.Category"];
-  values_styles_xml_LoginHelpText[label="values/styles.xml/LoginHelpText"];
-  values_styles_xml_Theme_IOSched_Map[label="values/styles.xml/Theme.IOSched.Map"];
+  values_styles_xml_ExploreItem_Snippet[label="values/styles.xml/ExploreItem.Snippet";];
+  values_styles_xml_ExploreItem_Category[label="values/styles.xml/ExploreItem.Category";];
+  values_styles_xml_LoginHelpText[label="values/styles.xml/LoginHelpText";];
+  values_styles_xml_Theme_IOSched_Map[label="values/styles.xml/Theme.IOSched.Map";];
   values_styles_xml_Theme_IOSched_Map -> values_styles_xml_Theme_IOSched_WithNavDrawer;
-  values_styles_xml_MapRoomTitle[label="values/styles.xml/MapRoomTitle"];
-  values_styles_xml_MapLabel[label="values/styles.xml/MapLabel"];
-  values_styles_xml_MyScheduleTabTextAppearancce[label="values/styles.xml/MyScheduleTabTextAppearancce"];
-  values_styles_xml_Widget_IOSched_EditText[label="values/styles.xml/Widget.IOSched.EditText"];
-  values_styles_xml_SessionDetailPlusOne[label="values/styles.xml/SessionDetailPlusOne"];
-  values_styles_xml_MyScheduleDayLabel[label="values/styles.xml/MyScheduleDayLabel"];
-  values_styles_xml_HeaderBar[label="values/styles.xml/HeaderBar"];
-  values_styles_xml_FeedbackQuestionGuideText[label="values/styles.xml/FeedbackQuestionGuideText"];
-  values_styles_xml_FeedbackRatingBar[label="values/styles.xml/FeedbackRatingBar"];
-  values_styles_xml_FeedbackNumberRatingBar[label="values/styles.xml/FeedbackNumberRatingBar"];
-  values_styles_xml_Theme_IOSched_CardView_Button[label="values/styles.xml/Theme.IOSched.CardView.Button"];
-  values_styles_xml_MoreButton[label="values/styles.xml/MoreButton"];
-  values_styles_xml_LiveNowIndicator[label="values/styles.xml/LiveNowIndicator"];
-  values_styles_xml_AboutLink[label="values/styles.xml/AboutLink"];
-  values_styles_xml_WelcomeTitle[label="values/styles.xml/WelcomeTitle"];
-  values_styles_xml_Body1Text[label="values/styles.xml/Body1Text"];
-  values_styles_xml_Body2Text[label="values/styles.xml/Body2Text"];
-  values_styles_xml_SessionDetailsTitle[label="values/styles.xml/SessionDetailsTitle"];
-  values_styles_xml_SessionDetailsSubtitle[label="values/styles.xml/SessionDetailsSubtitle"];
-  values_styles_xml_SessionDetailsSpeakerName[label="values/styles.xml/SessionDetailsSpeakerName"];
-  values_styles_xml_WelcomeAccounts[label="values/styles.xml/WelcomeAccounts"];
+  values_styles_xml_MapRoomTitle[label="values/styles.xml/MapRoomTitle";];
+  values_styles_xml_MapLabel[label="values/styles.xml/MapLabel";];
+  values_styles_xml_MyScheduleTabTextAppearancce[label="values/styles.xml/MyScheduleTabTextAppearancce";];
+  values_styles_xml_Widget_IOSched_EditText[label="values/styles.xml/Widget.IOSched.EditText";];
+  values_styles_xml_SessionDetailPlusOne[label="values/styles.xml/SessionDetailPlusOne";];
+  values_styles_xml_MyScheduleDayLabel[label="values/styles.xml/MyScheduleDayLabel";];
+  values_styles_xml_HeaderBar[label="values/styles.xml/HeaderBar";];
+  values_styles_xml_FeedbackQuestionGuideText[label="values/styles.xml/FeedbackQuestionGuideText";];
+  values_styles_xml_FeedbackRatingBar[label="values/styles.xml/FeedbackRatingBar";];
+  values_styles_xml_FeedbackNumberRatingBar[label="values/styles.xml/FeedbackNumberRatingBar";];
+  values_styles_xml_Theme_IOSched_CardView_Button[label="values/styles.xml/Theme.IOSched.CardView.Button";];
+  values_styles_xml_MoreButton[label="values/styles.xml/MoreButton";];
+  values_styles_xml_LiveNowIndicator[label="values/styles.xml/LiveNowIndicator";];
+  values_styles_xml_AboutLink[label="values/styles.xml/AboutLink";];
+  values_styles_xml_WelcomeTitle[label="values/styles.xml/WelcomeTitle";];
+  values_styles_xml_Body1Text[label="values/styles.xml/Body1Text";];
+  values_styles_xml_Body2Text[label="values/styles.xml/Body2Text";];
+  values_styles_xml_SessionDetailsTitle[label="values/styles.xml/SessionDetailsTitle";];
+  values_styles_xml_SessionDetailsSubtitle[label="values/styles.xml/SessionDetailsSubtitle";];
+  values_styles_xml_SessionDetailsSpeakerName[label="values/styles.xml/SessionDetailsSpeakerName";];
+  values_styles_xml_WelcomeAccounts[label="values/styles.xml/WelcomeAccounts";];
  }
  values_v21_styles_xml_Theme_IOSched -> values_styles_xml_Theme_IOSched_Base;
  values_v21_styles_xml_Theme_IOSched_WithNavDrawer -> values_styles_xml_Theme_IOSched;
