@@ -31,7 +31,7 @@
     <attr name="isLightTheme" format="boolean" />
 
     <!-- These are the standard attributes that make up a complete theme. -->
-    <declare-styleable name="Theme">
+    <declare-styleable name="AppCompatTheme">
 
         <!-- ============= -->
         <!-- Window styles -->
@@ -174,6 +174,8 @@
         <attr name="textAppearanceLargePopupMenu" format="reference"/>
         <!-- Text color, typeface, size, and style for small text inside of a popup menu. -->
         <attr name="textAppearanceSmallPopupMenu" format="reference"/>
+        <!-- Text color, typeface, size, and style for header text inside of a popup menu. -->
+        <attr name="textAppearancePopupMenuHeader" format="reference" />
 
 
         <!-- =================== -->
@@ -331,6 +333,9 @@
         <!-- The background used by framework controls. -->
         <attr name="controlBackground" format="reference" />
 
+        <!-- Default color of background imagery for floating components, ex. dialogs, popups, and cards. -->
+        <attr name="colorBackgroundFloating" format="color" />
+
         <!-- ============ -->
         <!-- Alert Dialog styles -->
         <!-- ============ -->
@@ -374,6 +379,10 @@
         <attr name="radioButtonStyle" format="reference" />
         <!-- Default RatingBar style. -->
         <attr name="ratingBarStyle" format="reference" />
+        <!-- Indicator RatingBar style. -->
+        <attr name="ratingBarStyleIndicator" format="reference" />
+        <!-- Small indicator RatingBar style. -->
+        <attr name="ratingBarStyleSmall" format="reference" />
         <!-- Default SeekBar style. -->
         <attr name="seekBarStyle" format="reference" />
         <!-- Default Spinner style. -->
@@ -381,6 +390,8 @@
         <!-- Default style for the Switch widget. -->
         <attr name="switchStyle" format="reference" />
 
+        <!-- Default menu-style ListView style. -->
+        <attr name="listMenuViewStyle" format="reference" />
     </declare-styleable>
 
 
@@ -464,6 +475,12 @@
         <!-- Minimum inset for content views within a bar. Navigation buttons and
              menu views are excepted. Only valid for some themes and configurations. -->
         <attr name="contentInsetRight" format="dimension"/>
+        <!-- Minimum inset for content views within a bar when a navigation button
+             is present, such as the Up button. Only valid for some themes and configurations. -->
+        <attr name="contentInsetStartWithNavigation" format="dimension" />
+        <!-- Minimum inset for content views within a bar when actions from a menu
+             are present. Only valid for some themes and configurations. -->
+        <attr name="contentInsetEndWithActions" format="dimension" />
         <!-- Elevation for the action bar itself -->
         <attr name="elevation" format="dimension" />
         <!-- Reference to a theme that should be used to inflate popups
@@ -556,6 +573,8 @@
         <attr name="android:itemIconDisabledAlpha"/>
         <!-- Whether space should be reserved in layout when an icon is missing. -->
         <attr name="preserveIconSpacing" format="boolean" />
+        <!-- Drawable for the arrow icon indicating a particular item is a submenu. -->
+        <attr name="subMenuArrow" format="reference" />
     </declare-styleable>
     <declare-styleable name="ActionMenuView">
         <!-- Size of padding on either end of a divider. -->
@@ -797,17 +816,41 @@
         <attr name="title" />
         <attr name="subtitle" />
         <attr name="android:gravity" />
-        <attr name="titleMargins" format="dimension" />
+        <!--  Specifies extra space on the left, start, right and end sides
+              of the toolbar's title. Margin values should be positive. -->
+        <attr name="titleMargin" format="dimension" />
+        <!--  Specifies extra space on the start side of the toolbar's title.
+              If both this attribute and titleMargin are specified, then this
+              attribute takes precedence. Margin values should be positive. -->
         <attr name="titleMarginStart" format="dimension" />
+        <!--  Specifies extra space on the end side of the toolbar's title.
+              If both this attribute and titleMargin are specified, then this
+              attribute takes precedence. Margin values should be positive. -->
         <attr name="titleMarginEnd" format="dimension" />
+        <!--  Specifies extra space on the top side of the toolbar's title.
+              If both this attribute and titleMargin are specified, then this
+              attribute takes precedence. Margin values should be positive. -->
         <attr name="titleMarginTop" format="dimension" />
+        <!--  Specifies extra space on the bottom side of the toolbar's title.
+              If both this attribute and titleMargin are specified, then this
+              attribute takes precedence. Margin values should be positive. -->
         <attr name="titleMarginBottom" format="dimension" />
+        <!-- {@deprecated Use titleMargin} -->
+        <attr name="titleMargins" format="dimension" />
         <attr name="contentInsetStart" />
         <attr name="contentInsetEnd" />
         <attr name="contentInsetLeft" />
         <attr name="contentInsetRight" />
+        <attr name="contentInsetStartWithNavigation" />
+        <attr name="contentInsetEndWithActions" />
         <attr name="maxButtonHeight" format="dimension" />
-
+        <attr name="buttonGravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+        </attr>
+        <!-- Icon drawable to use for the collapse button. -->
         <attr name="collapseIcon" format="reference" />
         <!-- Text to set as the content description for the collapse button. -->
         <attr name="collapseContentDescription" format="string" />
@@ -820,10 +863,6 @@
         <!-- Text to set as the content description for the navigation button
              located at the start of the toolbar. -->
         <attr name="navigationContentDescription" format="string" />
-
-        <!-- Allows us to read in the minHeight attr pre-v16 -->
-        <attr name="android:minHeight" />
-
         <!-- Drawable to set as the logo that appears at the starting side of
              the Toolbar, just after the navigation button. -->
         <attr name="logo" />
@@ -834,6 +873,7 @@
         <attr name="titleTextColor" format="color" />
         <!-- A color to apply to the subtitle string. -->
         <attr name="subtitleTextColor" format="color" />
+        <attr name="android:minHeight" />
     </declare-styleable>
 
     <declare-styleable name="PopupWindowBackgroundState">
@@ -852,6 +892,7 @@
         <!-- Whether the popup window should overlap its anchor view. -->
         <attr name="overlapAnchor" format="boolean" />
         <attr name="android:popupBackground" />
+        <attr name="android:popupAnimationStyle"/>
     </declare-styleable>
 
     <declare-styleable name="DrawerArrowToggle">
@@ -912,8 +953,52 @@
     <declare-styleable name="SwitchCompat">
         <!-- Drawable to use as the "thumb" that switches back and forth. -->
         <attr name="android:thumb" />
+        <!-- Tint to apply to the thumb drawable. -->
+        <attr name="thumbTint" format="color" />
+        <!-- Blending mode used to apply the thumb tint. -->
+        <attr name="thumbTintMode">
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            <enum name="src_over" value="3" />
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            <enum name="src_in" value="5" />
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            <enum name="src_atop" value="9" />
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
+            <enum name="multiply" value="14" />
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            <enum name="screen" value="15" />
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
+            <enum name="add" value="16" />
+        </attr>
         <!-- Drawable to use as the "track" that the switch thumb slides within. -->
         <attr name="track" format="reference" />
+        <!-- Tint to apply to the track. -->
+        <attr name="trackTint" format="color" />
+        <!-- Blending mode used to apply the track tint. -->
+        <attr name="trackTintMode">
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            <enum name="src_over" value="3" />
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            <enum name="src_in" value="5" />
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            <enum name="src_atop" value="9" />
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
+            <enum name="multiply" value="14" />
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            <enum name="screen" value="15" />
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
+            <enum name="add" value="16" />
+        </attr>
         <!-- Text to use when the switch is in the checked/"on" state. -->
         <attr name="android:textOn" />
         <!-- Text to use when the switch is in the unchecked/"off" state. -->
@@ -935,6 +1020,7 @@
     <declare-styleable name="TextAppearance">
         <attr name="android:textSize" />
         <attr name="android:textColor" />
+        <attr name="android:textColorHint"/>
         <attr name="android:textStyle" />
         <attr name="android:typeface" />
         <attr name="textAllCaps" />
@@ -959,6 +1045,60 @@
         <!-- Whether to automatically stack the buttons when there is not
              enough space to lay them out side-by-side. -->
         <attr name="allowStacking" format="boolean" />
+    </declare-styleable>
+
+    <!-- Attributes that can be assigned to a ColorStateList item. -->
+    <declare-styleable name="ColorStateListItem">
+        <!-- Base color for this state. -->
+        <attr name="android:color" />
+        <!-- Alpha multiplier applied to the base color. -->
+        <attr name="alpha" format="float" />
+        <attr name="android:alpha"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppCompatImageView">
+        <attr name="android:src"/>
+        <!-- Sets a drawable as the content of this ImageView. Allows the use of vector drawable
+             when running on older versions of the platform. -->
+        <attr name="srcCompat" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AppCompatSeekBar">
+        <attr name="android:thumb" />
+        <!-- Drawable displayed at each progress position on a seekbar. -->
+        <attr name="tickMark" format="reference" />
+        <!-- Tint to apply to the tick mark drawable. -->
+        <attr name="tickMarkTint" format="color" />
+        <!-- Blending mode used to apply the tick mark tint. -->
+        <attr name="tickMarkTintMode">
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            <enum name="src_over" value="3" />
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            <enum name="src_in" value="5" />
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            <enum name="src_atop" value="9" />
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
+            <enum name="multiply" value="14" />
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            <enum name="screen" value="15" />
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
+            <enum name="add" value="16" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AppCompatTextHelper">
+        <attr name="android:drawableLeft" />
+        <attr name="android:drawableTop" />
+        <attr name="android:drawableRight" />
+        <attr name="android:drawableBottom" />
+        <attr name="android:drawableStart" />
+        <attr name="android:drawableEnd" />
+        <attr name="android:textAppearance" />
     </declare-styleable>
 
 </resources>
