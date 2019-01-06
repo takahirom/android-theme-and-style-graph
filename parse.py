@@ -71,21 +71,23 @@ styles = []
 if len(sys.argv) > 1:
     directory = sys.argv[1]
 else:
-    directory = "appcompat"
+    directory = "platform_frameworks_support"
 
 if len(sys.argv) > 2:
     searchItem = sys.argv[2]
 else:
     searchItem = None
 
-for dirname in os.listdir(directory):
-    if dirname.find("values") < 0:
-        continue
-    for file in os.listdir(directory + "/" + dirname):
-        if file.find("styles") < 0 and file.find("themes") < 0:
+for dirname, dirnames, filenames in os.walk(directory):
+    for filename in filenames:
+        if dirname.find("values") < 0:
             continue
-        text = open(directory + "/" + dirname + "/" + file).read()
-        style = Style(dirname + "/" + file)
+        if filename.find("styles") < 0 and filename.find("themes") < 0:
+            continue
+
+        fullpath = os.path.join(dirname, filename)
+        text = open(fullpath).read()
+        style = Style(fullpath)
         styles.append(style)
         data = etree.fromstring(text)
         if 0: assert isinstance(data, etree.Element)
