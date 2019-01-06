@@ -94,7 +94,7 @@ for dirname, dirnames, filenames in os.walk(directory):
         text = open(fullPath).read()
 
         if withFullPath:
-            style = Style(os.path.basename(fullPath))
+            style = Style(fullPath)
         else:
             style = Style(os.path.basename(dirname) + "/" + filename)
 
