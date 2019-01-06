@@ -21,20 +21,28 @@ def execute (directory, query="") {
 task buildAppCompat << {
     if(project.hasProperty("query")){
         execute ("platform_frameworks_support",query)
-	} else {
+    } else {
         execute ("platform_frameworks_support")
+    }
+}
+task buildMaterialComponent << {
+    if(project.hasProperty("query")){
+        execute ("material-component-android",query)
+    } else {
+        execute ("material-component-android")
     }
 }
 task buildIosched << {
     if(project.hasProperty("query")){
         execute ("iosched",query)
-	} else {
+	  } else {
         execute ("iosched")
-	}
+	  }
 }
 
 task buildAll << {
 	buildAppCompat.execute()
+  buildMaterialComponent.execute()
 	buildIosched.execute()
 	project.ext.query = "colorPrimary"
 	buildAppCompat.execute()

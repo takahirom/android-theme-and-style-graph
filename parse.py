@@ -59,8 +59,9 @@ class StyleElement:
 
 
 class Style:
-    def __init__(self, dirname):
+    def __init__(self, dirname, filename):
         self.dirname = dirname
+        self.filename = filename
         self.elements = []
 
     def add(self, name, parent, item_dict):
@@ -87,7 +88,7 @@ for dirname, dirnames, filenames in os.walk(directory):
 
         fullpath = os.path.join(dirname, filename)
         text = open(fullpath).read()
-        style = Style(fullpath)
+        style = Style(fullpath, dirname + "/" + filename)
         styles.append(style)
         data = etree.fromstring(text)
         if 0: assert isinstance(data, etree.Element)
