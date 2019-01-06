@@ -59,33 +59,45 @@ class StyleElement:
 
 
 class Style:
-    def __init__(self, dirname):
-        self.dirname = dirname
+    def __init__(self, filename):
+        self.filename = filename
         self.elements = []
 
     def add(self, name, parent, item_dict):
-        self.elements.append(StyleElement(self.dirname, name, parent, item_dict))
+        self.elements.append(StyleElement(self.filename, name, parent, item_dict))
 
 
 styles = []
 if len(sys.argv) > 1:
     directory = sys.argv[1]
 else:
-    directory = "appcompat"
+    directory = "platform_frameworks_support"
 
 if len(sys.argv) > 2:
     searchItem = sys.argv[2]
 else:
     searchItem = None
 
-for dirname in os.listdir(directory):
-    if dirname.find("values") < 0:
-        continue
-    for file in os.listdir(directory + "/" + dirname):
-        if file.find("styles") < 0 and file.find("themes") < 0:
+if len(sys.argv) > 3:
+    withFullPath = True
+else:
+    withFullPath = False
+
+for dirname, dirnames, filenames in os.walk(directory):
+    for filename in filenames:
+        if dirname.find("values") < 0:
             continue
-        text = open(directory + "/" + dirname + "/" + file).read()
-        style = Style(dirname + "/" + file)
+        if filename.find("styles") < 0 and filename.find("themes") < 0:
+            continue
+
+        fullPath = os.path.join(dirname, filename)
+        text = open(fullPath).read()
+
+        if withFullPath:
+            style = Style(fullPath)
+        else:
+            style = Style(os.path.basename(dirname) + "/" + filename)
+
         styles.append(style)
         data = etree.fromstring(text)
         if 0: assert isinstance(data, etree.Element)
@@ -99,7 +111,7 @@ for dirname in os.listdir(directory):
 styles.sort()
 styles.reverse()
 for style in styles:
-    print style.dirname
+    print style.filename
 sys.stdout = open("output/" + directory + '.dot', 'w')
 print "digraph {"
 
@@ -110,20 +122,19 @@ if searchItem:
 
 print " rankdir=LR;"
 for style in styles:
-    # print " subgraph cluster_"+to_node(style.dirname) +" {"
-    print " subgraph " + to_node(style.dirname) + " {"
+    print " subgraph " + to_node(style.filename) + " {"
     print "node [style=filled;];"
-    if style.dirname.find("themes") > -1:
+    if style.filename.find("themes") > -1:
         print "node [color=\"#aaaaff\"];"
 
     print "  "
-    print "  label = " + clean(style.dirname) + ";"
+    print "  label = " + clean(style.filename) + ";"
 
     for element in style.elements:
         print "  " + element.def_node(searchItem) + ";"  # + " -> " + clean(element.parent)
         for parentElement in style.elements:
             if element.get_parent() == parentElement.name:
-                print "  " + element.to_node() + " -> " + to_node(style.dirname + "/" + element.get_parent()) + ";"
+                print "  " + element.to_node() + " -> " + to_node(style.filename + "/" + element.get_parent()) + ";"
     print " }"
 for style in styles:
     for element in style.elements:

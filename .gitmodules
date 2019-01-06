@@ -1,0 +1,9 @@
+[submodule "material-component-android"]
+	path = material-component-android
+	url = git@github.com:material-components/material-components-android.git
+[submodule "platform_frameworks_support"]
+	path = platform_frameworks_support
+	url = git@github.com:aosp-mirror/platform_frameworks_support.git
+[submodule "iosched"]
+	path = iosched
+	url = git@github.com:google/iosched.git
